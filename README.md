@@ -1,4 +1,4 @@
-# README Parity Code for Java
+# README:  Parity Codec Library for Java
 
 ## Introduction
 
