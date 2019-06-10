@@ -4,7 +4,7 @@
 
 This project is in a pre-inception phase (Alpha) stay tuned - More to Come
 
-The goal of this priject is to port over to the Phyton Codec Library by Polkascan to Java
+The goal of this project is to port over to the Phyton Codec Library by Polkascan to Java
 
 * https://github.com/polkascan/py-scale-codec
 
