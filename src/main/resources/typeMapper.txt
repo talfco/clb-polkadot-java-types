@@ -1,0 +1,7 @@
+()@Null
+Vec<u8>@Bytes
+<Lookup as StaticLookup>::Source@Address
+<Balance as HasCompact>::Type@Compact<Balance>
+<BlockNumber as HasCompact>::Type@Compact<BlockNumber>
+<Moment as HasCompact>::Type@Compact<Moment>
+<InherentOfflineReport as InherentOfflineReport>::Inherent@Inherent

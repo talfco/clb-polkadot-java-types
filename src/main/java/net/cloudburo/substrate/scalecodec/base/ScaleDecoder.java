@@ -1,17 +1,20 @@
 package net.cloudburo.substrate.scalecodec.base;
 
 import org.apache.commons.codec.binary.Hex;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 
 import java.io.IOException;
 import java.math.BigInteger;
 
 public abstract class ScaleDecoder {
     static boolean debug = false;
+    static final Logger logger = LoggerFactory.getLogger(ScaleDecoder.class);
 
-    String subType;
-    ScaleBytes data;
-    String rawValue;
-    Object value;
+    protected String subType;
+    protected ScaleBytes data;
+    protected String rawValue;
+    protected Object value;
 
 
     public ScaleDecoder(ScaleBytes data, String subType) {
@@ -31,8 +34,20 @@ public abstract class ScaleDecoder {
         return this.value;
     }
 
-    public byte[] getNextBytes(int length) {
-        byte[] data = this.data.getNextBytes(length);
+    /**
+     *
+     * @param numberOfBytes Number of Bytes to be returned
+     * @return the requested rang of Bytes.
+     * Subsequent call will return the next bytes (offset state is internally kept)
+     */
+    public byte[] getNextBytes(int numberOfBytes) {
+        byte[] data = this.data.getNextBytes(numberOfBytes);
+        this.rawValue += Hex.encodeHexString(data);
+        return data;
+    }
+
+    public byte[] getRemainingBytes() {
+        byte[] data = this.data.getRemainingBytes();
         this.rawValue += Hex.encodeHexString(data);
         return data;
     }
@@ -50,12 +65,6 @@ public abstract class ScaleDecoder {
         } else {
             throw new InvalidScaleTypeValueException("Invalid value for datatype 'boolean':"+data);
         }
-    }
-
-    public byte[] getRemainingBytes() {
-        byte[] data = this.data.getRemainingBytes();
-        this.rawValue += Hex.encodeHexString(data);
-        return data;
     }
 
 }
