@@ -1,4 +1,4 @@
-package net.cloudburo.substrate.scalecodec.base;
+package net.cloudburo.polkadot.types.base;
 
 /*
 ** A Scale Type holds the byte data of the object and the logic to convert the data to

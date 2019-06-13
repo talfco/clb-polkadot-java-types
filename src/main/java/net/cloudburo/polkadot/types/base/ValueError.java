@@ -1,4 +1,4 @@
-package net.cloudburo.substrate.scalecodec.base;
+package net.cloudburo.polkadot.types.base;
 
 public class ValueError extends Exception {
     public  ValueError(String msg) {

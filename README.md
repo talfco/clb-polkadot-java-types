@@ -7,6 +7,7 @@ This project is in a pre-inception phase (Alpha) stay tuned - More to Come
 The goal of this project is to port over to the Phyton Codec Library by Polkascan to Java
 
 * https://github.com/polkascan/py-scale-codec
+* https://www.npmjs.com/package/@polkadot/types
 
 ## Byte Handling
 A `byte` according to the Java language spec represents a value between -128 up to 127.

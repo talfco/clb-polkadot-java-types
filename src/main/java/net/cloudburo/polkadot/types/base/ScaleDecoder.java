@@ -1,11 +1,11 @@
-package net.cloudburo.substrate.scalecodec.base;
+package net.cloudburo.polkadot.types.base;
 
+import net.cloudburo.polkadot.types.TypeFactory;
 import org.apache.commons.codec.binary.Hex;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
 import java.io.IOException;
-import java.math.BigInteger;
 
 public abstract class ScaleDecoder {
     static boolean debug = false;
@@ -17,6 +17,7 @@ public abstract class ScaleDecoder {
     protected Object value;
 
 
+
     public ScaleDecoder(ScaleBytes data, String subType) {
         this.subType = subType;
         this.data = data;
@@ -24,7 +25,29 @@ public abstract class ScaleDecoder {
         this.value = null;
     }
 
-    public abstract Object  process() throws InvalidScaleTypeValueException, IOException;
+    public String getSubType() {
+        return subType;
+    }
+
+    public ScaleBytes getData() {
+        return data;
+    }
+
+    public String getRawValue() {
+        return rawValue;
+    }
+
+    public Object getValue() {
+        return value;
+    }
+
+    public abstract Object  process() throws InvalidScaleTypeValueException, IOException, RemainingScaleBytesNotEmptyException;
+
+    public ScaleType decodeType(String typeString) throws InvalidScaleTypeValueException, RemainingScaleBytesNotEmptyException, IOException {
+        ScaleType obj = TypeFactory.createScaleTypeObject(typeString, this.data);
+        obj.decode(false);
+        return obj;
+    }
 
     public Object decode(boolean checkRemaining) throws RemainingScaleBytesNotEmptyException, InvalidScaleTypeValueException, IOException {
         this.value = process();

@@ -1,13 +1,14 @@
-package net.cloudburo.substrate.scalecodec.types;
+package net.cloudburo.polkadot.types.codec;
 
 import java.io.ByteArrayOutputStream;
 import java.io.IOException;
-import net.cloudburo.substrate.scalecodec.base.ScaleBytes;
-import net.cloudburo.substrate.scalecodec.base.ScaleType;
+
+import net.cloudburo.polkadot.types.base.ScaleBytes;
+import net.cloudburo.polkadot.types.base.ScaleType;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
-public class Compact extends ScaleType{
+public class Compact extends ScaleType {
 
     static final Logger logger = LoggerFactory.getLogger(Compact.class);
 

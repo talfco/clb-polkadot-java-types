@@ -1,6 +1,6 @@
-package net.cloudburo.substrate.scalecodec.base;
+package net.cloudburo.polkadot.types.base;
 
-import net.cloudburo.substrate.scalecodec.types.ScaleTypeFactory;
+import net.cloudburo.polkadot.types.TypeFactory;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -59,7 +59,7 @@ public class Helper {
 
     public static Map<String, String> loadHashMapFromFile(String delimiter, String fileName) throws URISyntaxException, IOException {
         Map<String, String> map = new HashMap<>();
-        try (Stream<String> lines = Files.lines(Paths.get(ScaleTypeFactory.class.getClassLoader()
+        try (Stream<String> lines = Files.lines(Paths.get(TypeFactory.class.getClassLoader()
                 .getResource(fileName).toURI()))) {
             lines.filter(line -> line.contains(delimiter)).forEach(
                     line -> map.putIfAbsent(line.split(delimiter)[0], line.split(delimiter)[1])

@@ -1,12 +1,11 @@
-package net.cloudburo.substrate.scalecodec.types;
+package net.cloudburo.polkadot.types.codec;
 
+import net.cloudburo.polkadot.types.base.Helper;
+import net.cloudburo.polkadot.types.base.InvalidScaleTypeValueException;
+import net.cloudburo.polkadot.types.base.ScaleBytes;
+import net.cloudburo.polkadot.types.base.ScaleType;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
-
-import net.cloudburo.substrate.scalecodec.base.Helper;
-import net.cloudburo.substrate.scalecodec.base.InvalidScaleTypeValueException;
-import net.cloudburo.substrate.scalecodec.base.ScaleBytes;
-import net.cloudburo.substrate.scalecodec.base.ScaleType;
 
 
 public class U32 extends ScaleType {

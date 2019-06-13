@@ -1,21 +1,24 @@
-package net.cloudburo.substrate.scalecodec.types;
+package net.cloudburo.polkadot.types;
 
 import java.io.IOException;
 import java.net.URISyntaxException;
 import java.util.Map;
 
-import net.cloudburo.substrate.scalecodec.base.ScaleDecoder;
+import net.cloudburo.polkadot.types.base.Helper;
+import net.cloudburo.polkadot.types.base.ScaleBytes;
+import net.cloudburo.polkadot.types.base.ScaleDecoder;
+import net.cloudburo.polkadot.types.base.ScaleType;
+import net.cloudburo.polkadot.types.codec.CompactU32;
+import net.cloudburo.polkadot.types.codec.VecU32;
+import net.cloudburo.polkadot.types.primitives.AccountId;
+import net.cloudburo.polkadot.types.primitives.Bool;
+
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
-import net.cloudburo.substrate.scalecodec.base.Helper;
-import net.cloudburo.substrate.scalecodec.base.ScaleBytes;
-import net.cloudburo.substrate.scalecodec.base.ScaleType;
+public class TypeFactory {
 
-
-public class ScaleTypeFactory {
-
-    static final Logger logger = LoggerFactory.getLogger(ScaleTypeFactory.class);
+    static final Logger logger = LoggerFactory.getLogger(TypeFactory.class);
 
     // Singleton
     private static Map<String, String> typeMapper = null;
@@ -25,13 +28,17 @@ public class ScaleTypeFactory {
             return new Bool(bytes);
         } else if (type.equals("Compact<u32>")) {
             return new CompactU32(bytes);
+        } else if (type.equals(("Vec<AccountId>"))) {
+            return new VecU32(bytes, "AccountId");
+        } else if (type.equals(("AccountId"))) {
+            return new AccountId(bytes);
         }
         return null;
     }
 
     public static ScaleDecoder getDecoderObject(String type, ScaleBytes data ) {
         logger.debug("Decoder Class for "+type);
-        type = ScaleTypeFactory.convertType(type);
+        type = TypeFactory.convertType(type);
         if (type.equals("Compact<u32>")) {
             return new CompactU32(data);
         }
@@ -44,7 +51,7 @@ public class ScaleTypeFactory {
         name = name.replace("<T>", "");
         name = name.replace("<T as Trait>::", "");
         try {
-            Map <String, String> typeMapper = ScaleTypeFactory.loadTypeMapperFromFile("@","typeMapper.txt");
+            Map <String, String> typeMapper = TypeFactory.loadTypeMapperFromFile("@","typeMapper.txt");
             String mappedType = typeMapper.get(name);
             if (mappedType != null)
                 name = mappedType;
@@ -60,6 +67,5 @@ public class ScaleTypeFactory {
             typeMapper = Helper.loadHashMapFromFile(delimiter, fileName);
         return typeMapper;
     }
-
 
 }

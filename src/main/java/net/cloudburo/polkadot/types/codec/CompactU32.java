@@ -1,7 +1,7 @@
-package net.cloudburo.substrate.scalecodec.types;
+package net.cloudburo.polkadot.types.codec;
 
-import net.cloudburo.substrate.scalecodec.base.Helper;
-import net.cloudburo.substrate.scalecodec.base.ScaleBytes;
+import net.cloudburo.polkadot.types.base.Helper;
+import net.cloudburo.polkadot.types.base.ScaleBytes;
 
 import java.io.IOException;
 import java.math.BigInteger;
