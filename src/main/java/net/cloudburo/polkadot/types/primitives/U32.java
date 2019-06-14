@@ -1,19 +1,22 @@
-package net.cloudburo.polkadot.types.codec;
+package net.cloudburo.polkadot.types.primitives;
 
 import net.cloudburo.polkadot.types.base.Helper;
 import net.cloudburo.polkadot.types.base.InvalidScaleTypeValueException;
 import net.cloudburo.polkadot.types.base.ScaleBytes;
 import net.cloudburo.polkadot.types.base.ScaleType;
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
 
-
+/**
+ * A 32-bit unsigned integer
+ */
 public class U32 extends ScaleType {
 
-    static final Logger logger = LoggerFactory.getLogger(ScaleType.class);
-
     public U32(ScaleBytes data ) {
-        super(data,"Compact<u32>",null);
+        super(data,null);
+        // TODO metaData
+    }
+
+    public U32(ScaleBytes data, String subType ) {
+        super(data,subType,null);
         // TODO metaData
     }
 

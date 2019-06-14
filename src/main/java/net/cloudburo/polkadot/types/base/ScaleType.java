@@ -6,8 +6,14 @@ package net.cloudburo.polkadot.types.base;
  */
 public abstract class ScaleType extends ScaleDecoder {
     Object metaData;
+
+    public ScaleType(ScaleBytes data, Object metaData) {
+        super(data);
+        this.metaData = metaData;
+    }
     public ScaleType(ScaleBytes data, String subType, Object metaData) {
         super(data, subType);
         this.metaData = metaData;
     }
+
 }

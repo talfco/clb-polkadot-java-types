@@ -17,7 +17,6 @@ public abstract class ScaleDecoder {
     protected Object value;
 
 
-
     public ScaleDecoder(ScaleBytes data, String subType) {
         this.subType = subType;
         this.data = data;
@@ -25,8 +24,17 @@ public abstract class ScaleDecoder {
         this.value = null;
     }
 
+    public ScaleDecoder(ScaleBytes data) {
+        this.data = data;
+        this.rawValue = "";
+        this.value = null;
+    }
+
     public String getSubType() {
-        return subType;
+        if (subType == null)
+            return this.getClass().getSimpleName();
+        else
+            return subType;
     }
 
     public ScaleBytes getData() {

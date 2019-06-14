@@ -4,10 +4,10 @@ import net.cloudburo.polkadot.types.base.ScaleBytes;
 import net.cloudburo.polkadot.types.primitives.H256;
 
 /**
- * An attested candidate
+ * Wrapper for a SessionKey. Same as an normal [[AuthorityId]], i.e. a wrapper around publicKey
  */
-public class AttestedCandidate extends H256 {
-    public AttestedCandidate(ScaleBytes data) {
+public class SessionKey extends H256 {
+    public SessionKey(ScaleBytes data) {
         super(data);
     }
 }
