@@ -1,8 +1,8 @@
 package net.cloudburo.polkadot.types.primitives;
 
-import net.cloudburo.polkadot.types.base.InvalidScaleTypeValueException;
-import net.cloudburo.polkadot.types.base.ScaleBytes;
-import net.cloudburo.polkadot.types.base.ScaleType;
+import net.cloudburo.polkadot.types.common.InvalidScaleTypeValueException;
+import net.cloudburo.polkadot.types.common.ScaleBytes;
+import net.cloudburo.polkadot.types.common.ScaleType;
 
 /**
  * Representation for a boolean value in the system

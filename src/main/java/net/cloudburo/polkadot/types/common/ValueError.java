@@ -1,4 +1,4 @@
-package net.cloudburo.polkadot.types.base;
+package net.cloudburo.polkadot.types.common;
 
 public class ValueError extends Exception {
     public  ValueError(String msg) {

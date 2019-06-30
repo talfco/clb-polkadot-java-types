@@ -1,35 +1,68 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="BookmarkManager">
-    <bookmark url="file://$PROJECT_DIR$/src/test/java/net/cloudburo/polkadot/types/base/ScaleDecoderTest.java" line="35" />
+    <bookmark url="file://$PROJECT_DIR$/src/main/java/net/cloudburo/polkadot/types/primitives/Bytes.java" line="9" />
+    <bookmark url="file://$PROJECT_DIR$/src/test/java/net/cloudburo/polkadot/types/codec/UIntTest.java" description="        ui = new UInt(BigInteger.valueOf(42),new U..." line="23" />
   </component>
   <component name="ChangeListManager">
     <list default="true" id="95193441-4bde-40ef-b2dd-98a027544924" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/net/cloudburo/polkadot/types/primitives/AccountIndex.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/net/cloudburo/polkadot/types/primitives/Moment.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/net/cloudburo/polkadot/types/primitives/U64.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/net/cloudburo/polkadot/types/substrate/BlockNumber.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/net/cloudburo/polkadot/types/substrate/MemberId.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/net/cloudburo/polkadot/types/substrate/NewAccountOutcome.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/net/cloudburo/polkadot/types/substrate/PaidTermId.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/net/cloudburo/polkadot/types/substrate/ParaId.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/net/cloudburo/polkadot/types/substrate/Permill.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/net/cloudburo/polkadot/types/substrate/PropIndex.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/net/cloudburo/polkadot/types/substrate/ProposalIndex.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/net/cloudburo/polkadot/types/substrate/ReferendumIndex.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/net/cloudburo/polkadot/types/substrate/SubscriptionId.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/net/cloudburo/polkadot/types/substrate/VoteIndex.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/net/cloudburo/polkadot/types/codec/AbstractInt.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/net/cloudburo/polkadot/types/codec/Option.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/net/cloudburo/polkadot/types/codec/ScaleUInt.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/net/cloudburo/polkadot/types/codec/UInt.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/net/cloudburo/polkadot/types/codec/UInt8Array.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/net/cloudburo/polkadot/types/codec/UIntBitLength.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/net/cloudburo/polkadot/types/common/SubstrateTypeException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/net/cloudburo/polkadot/types/primitives/Bytes.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/net/cloudburo/polkadot/types/primitives/H160.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/net/cloudburo/polkadot/types/primitives/H512.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/net/cloudburo/polkadot/types/primitives/U128.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/net/cloudburo/polkadot/types/primitives/U16.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/net/cloudburo/polkadot/types/primitives/U256.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/net/cloudburo/polkadot/types/primitives/U8.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/net/cloudburo/polkadot/types/codec/CompactU32Test.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/net/cloudburo/polkadot/types/codec/UIntTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/net/cloudburo/polkadot/types/common/HelperTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/net/cloudburo/polkadot/types/common/ScaleDecoderTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/net/cloudburo/polkadot/types/primitives/AccountIdTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/net/cloudburo/polkadot/types/primitives/BoolTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/net/cloudburo/polkadot/types/base/ScaleDecoder.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/net/cloudburo/polkadot/types/base/ScaleDecoder.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/net/cloudburo/polkadot/types/base/ScaleType.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/net/cloudburo/polkadot/types/base/ScaleType.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/net/cloudburo/polkadot/types/codec/U32.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/net/cloudburo/polkadot/types/primitives/U32.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/net/cloudburo/polkadot/types/TypeFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/net/cloudburo/polkadot/types/TypeFactory.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/net/cloudburo/polkadot/types/base/Helper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/net/cloudburo/polkadot/types/common/Helper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/net/cloudburo/polkadot/types/base/InvalidScaleTypeValueException.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/net/cloudburo/polkadot/types/common/InvalidScaleTypeValueException.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/net/cloudburo/polkadot/types/base/RemainingScaleBytesNotEmptyException.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/net/cloudburo/polkadot/types/common/RemainingScaleBytesNotEmptyException.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/net/cloudburo/polkadot/types/base/ScaleBytes.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/net/cloudburo/polkadot/types/common/ScaleBytes.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/net/cloudburo/polkadot/types/base/ScaleDecoder.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/net/cloudburo/polkadot/types/common/ScaleDecoder.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/net/cloudburo/polkadot/types/base/ScaleType.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/net/cloudburo/polkadot/types/common/ScaleType.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/net/cloudburo/polkadot/types/base/ValueError.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/net/cloudburo/polkadot/types/common/ValueError.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/net/cloudburo/polkadot/types/codec/Compact.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/net/cloudburo/polkadot/types/codec/Compact.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/net/cloudburo/polkadot/types/codec/CompactU32.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/net/cloudburo/polkadot/types/codec/CompactU32.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/net/cloudburo/polkadot/types/codec/VecU32.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/net/cloudburo/polkadot/types/codec/VecU32.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/net/cloudburo/polkadot/types/primitives/AccountId.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/net/cloudburo/polkadot/types/primitives/AccountId.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/net/cloudburo/polkadot/types/primitives/AccountIndex.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/net/cloudburo/polkadot/types/primitives/AccountIndex.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/net/cloudburo/polkadot/types/primitives/Bool.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/net/cloudburo/polkadot/types/primitives/Bool.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/net/cloudburo/polkadot/types/primitives/ContentId.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/net/cloudburo/polkadot/types/substrate/ContentId.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/net/cloudburo/polkadot/types/primitives/H256.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/net/cloudburo/polkadot/types/primitives/H256.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/net/cloudburo/polkadot/types/primitives/Hash.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/net/cloudburo/polkadot/types/primitives/Hash.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/net/cloudburo/polkadot/types/primitives/SessionKey.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/net/cloudburo/polkadot/types/substrate/SessionKey.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/net/cloudburo/polkadot/types/primitives/Moment.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/net/cloudburo/polkadot/types/primitives/Moment.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/net/cloudburo/polkadot/types/primitives/U32.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/net/cloudburo/polkadot/types/primitives/U32.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/net/cloudburo/polkadot/types/primitives/U64.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/net/cloudburo/polkadot/types/primitives/U64.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/net/cloudburo/polkadot/types/substrate/AttestedCandidate.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/net/cloudburo/polkadot/types/substrate/AttestedCandidate.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/net/cloudburo/polkadot/types/substrate/BlockNumber.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/net/cloudburo/polkadot/types/substrate/BlockNumber.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/net/cloudburo/polkadot/types/substrate/ContentId.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/net/cloudburo/polkadot/types/substrate/ContentId.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/net/cloudburo/polkadot/types/substrate/MemberId.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/net/cloudburo/polkadot/types/substrate/MemberId.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/net/cloudburo/polkadot/types/substrate/NewAccountOutcome.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/net/cloudburo/polkadot/types/substrate/NewAccountOutcome.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/net/cloudburo/polkadot/types/substrate/PaidTermId.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/net/cloudburo/polkadot/types/substrate/PaidTermId.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/net/cloudburo/polkadot/types/substrate/ParaId.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/net/cloudburo/polkadot/types/substrate/ParaId.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/net/cloudburo/polkadot/types/substrate/Permill.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/net/cloudburo/polkadot/types/substrate/Permill.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/net/cloudburo/polkadot/types/substrate/PropIndex.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/net/cloudburo/polkadot/types/substrate/PropIndex.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/net/cloudburo/polkadot/types/substrate/ProposalIndex.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/net/cloudburo/polkadot/types/substrate/ProposalIndex.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/net/cloudburo/polkadot/types/substrate/ReferendumIndex.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/net/cloudburo/polkadot/types/substrate/ReferendumIndex.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/net/cloudburo/polkadot/types/substrate/SessionKey.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/net/cloudburo/polkadot/types/substrate/SessionKey.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/net/cloudburo/polkadot/types/substrate/SubscriptionId.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/net/cloudburo/polkadot/types/substrate/SubscriptionId.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/net/cloudburo/polkadot/types/substrate/VoteIndex.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/net/cloudburo/polkadot/types/substrate/VoteIndex.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/net/cloudburo/polkadot/types/base/ScaleDecoderTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/net/cloudburo/polkadot/types/codec/TypeFactoryTest.java" beforeDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/.gradle/" />
@@ -72,11 +105,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/net/cloudburo/polkadot/types/primitives/U32.java">
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/net/cloudburo/polkadot/types/codec/UInt.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <caret column="1" selection-start-column="1" selection-end-column="1" />
+            <state relative-caret-position="156">
+              <caret line="32" column="5" selection-start-line="32" selection-start-column="5" selection-end-line="32" selection-end-column="5" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -85,52 +118,63 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="uml://JAVA/net.cloudburo.polkadot.types.primitives">
-          <provider selected="true" editor-type-id="UmlEditorProvider">
-            <state>
-              <ID>JAVA</ID>
-              <OriginalElement>net.cloudburo.polkadot.types.primitives</OriginalElement>
-              <nodes>
-                <node x="109.0" y="77.0">net.cloudburo.polkadot.types.primitives.AccountIndex</node>
-                <node x="76.25" y="0.0">net.cloudburo.polkadot.types.primitives.U32</node>
-                <node x="249.0" y="149.0">net.cloudburo.polkadot.types.primitives.Bool</node>
-                <node x="130.0" y="226.0">net.cloudburo.polkadot.types.primitives.Hash</node>
-                <node x="0.0" y="226.0">net.cloudburo.polkadot.types.primitives.AccountId</node>
-                <node x="0.0" y="77.0">net.cloudburo.polkadot.types.primitives.Moment</node>
-                <node x="74.0" y="149.0">net.cloudburo.polkadot.types.primitives.H256</node>
-              </nodes>
-              <notes />
-              <edges>
-                <edge source="net.cloudburo.polkadot.types.primitives.Moment" target="net.cloudburo.polkadot.types.primitives.U32">
-                  <point x="0.0" y="-13.5" />
-                  <point x="44.5" y="52.0" />
-                  <point x="93.0" y="52.0" />
-                  <point x="-16.75" y="13.5" />
-                </edge>
-                <edge source="net.cloudburo.polkadot.types.primitives.Hash" target="net.cloudburo.polkadot.types.primitives.H256">
-                  <point x="0.0" y="-13.5" />
-                  <point x="167.0" y="201.0" />
-                  <point x="129.5" y="201.0" />
-                  <point x="18.5" y="13.5" />
-                </edge>
-                <edge source="net.cloudburo.polkadot.types.primitives.AccountIndex" target="net.cloudburo.polkadot.types.primitives.U32">
-                  <point x="0.0" y="-13.5" />
-                  <point x="175.0" y="52.0" />
-                  <point x="126.5" y="52.0" />
-                  <point x="16.75" y="13.5" />
-                </edge>
-                <edge source="net.cloudburo.polkadot.types.primitives.AccountId" target="net.cloudburo.polkadot.types.primitives.H256">
-                  <point x="0.0" y="-13.5" />
-                  <point x="55.0" y="201.0" />
-                  <point x="92.5" y="201.0" />
-                  <point x="-18.5" y="13.5" />
-                </edge>
-              </edges>
-              <settings layout="Hierarchic Group" zoom="1.0" x="4.0" y="179.5" />
-              <SelectedNodes />
-              <Categories />
-              <SCOPE>All</SCOPE>
-              <VISIBILITY>private</VISIBILITY>
+        <entry file="file://$PROJECT_DIR$/src/main/java/net/cloudburo/polkadot/types/primitives/U8.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="119">
+              <caret line="18" column="40" selection-start-line="18" selection-start-column="40" selection-end-line="18" selection-end-column="40" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/net/cloudburo/polkadot/types/primitives/U16.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="170">
+              <caret line="18" selection-start-line="18" selection-end-line="20" selection-end-column="5" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/net/cloudburo/polkadot/types/codec/Compact.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="366">
+              <caret line="32" column="33" selection-start-line="32" selection-start-column="30" selection-end-line="32" selection-end-column="47" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/net/cloudburo/polkadot/types/codec/AbstractInt.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="357">
+              <caret line="40" lean-forward="true" selection-start-line="40" selection-end-line="40" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#588#589#0" expanded="true" />
+                <element signature="e#658#659#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/net/cloudburo/polkadot/types/primitives/U32.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="238">
+              <caret line="17" selection-start-line="17" selection-end-line="17" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -138,8 +182,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/net/cloudburo/polkadot/types/primitives/U64.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="306">
-              <caret line="18" lean-forward="true" selection-start-line="18" selection-end-line="18" />
+            <state relative-caret-position="207">
+              <caret line="20" column="5" selection-start-line="14" selection-start-column="3" selection-end-line="20" selection-end-column="5" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -148,10 +192,10 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/net/cloudburo/polkadot/types/substrate/BlockNumber.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/net/cloudburo/polkadot/types/primitives/U128.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="153">
-              <caret line="11" column="5" lean-forward="true" selection-start-line="9" selection-start-column="4" selection-end-line="11" selection-end-column="5" />
+            <state relative-caret-position="259">
+              <caret line="18" selection-start-line="18" selection-end-line="18" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -160,52 +204,10 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/net/cloudburo/polkadot/types/substrate/MemberId.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/net/cloudburo/polkadot/types/primitives/U256.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="102">
-              <caret line="6" column="33" lean-forward="true" selection-start-line="6" selection-start-column="9" selection-end-line="6" selection-end-column="33" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#240#241#0" expanded="true" />
-                <element signature="e#267#268#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/net/cloudburo/polkadot/types/substrate/PaidTermId.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="170">
-              <caret line="10" selection-start-line="10" selection-end-line="12" selection-end-column="5" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#278#279#0" expanded="true" />
-                <element signature="e#305#306#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/java/net/cloudburo/polkadot/types/substrate/SubscriptionId.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="238">
-              <caret line="14" column="1" lean-forward="true" selection-start-line="14" selection-start-column="1" selection-end-line="14" selection-end-column="1" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#253#254#0" expanded="true" />
-                <element signature="e#280#281#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/net/cloudburo/polkadot/types/substrate/VoteIndex.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="102">
-              <caret line="6" column="41" lean-forward="true" selection-start-line="6" selection-start-column="3" selection-end-line="6" selection-end-column="41" />
+            <state relative-caret-position="136">
+              <caret line="11" column="3" selection-start-line="11" selection-start-column="3" selection-end-line="11" selection-end-column="3" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -214,55 +216,14 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="uml://JAVA/net.cloudburo.polkadot.types">
-          <provider selected="true" editor-type-id="UmlEditorProvider">
-            <state>
-              <ID>JAVA</ID>
-              <OriginalElement>net.cloudburo.polkadot.types</OriginalElement>
-              <nodes>
-                <node x="102.0" y="0.0">net.cloudburo.polkadot.types.base</node>
-                <node x="3.5" y="154.0">net.cloudburo.polkadot.types.substrate</node>
-                <node x="0.0" y="226.0">net.cloudburo.polkadot.types.TypeFactory</node>
-                <node x="0.0" y="77.0">net.cloudburo.polkadot.types.primitives</node>
-                <node x="179.0" y="77.0">net.cloudburo.polkadot.types.codec</node>
-              </nodes>
-              <notes />
-              <edges>
-                <edge source="net.cloudburo.polkadot.types.primitives" target="net.cloudburo.polkadot.types.base">
-                  <point x="0.0" y="-13.5" />
-                  <point x="79.5" y="52.0" />
-                  <point x="131.0" y="52.0" />
-                  <point x="-29.0" y="13.5" />
-                </edge>
-                <edge source="net.cloudburo.polkadot.types.codec" target="net.cloudburo.polkadot.types.base">
-                  <point x="0.0" y="-13.5" />
-                  <point x="240.5" y="52.0" />
-                  <point x="189.0" y="52.0" />
-                  <point x="29.0" y="13.5" />
-                </edge>
-                <edge source="net.cloudburo.polkadot.types.substrate" target="net.cloudburo.polkadot.types.primitives">
-                  <point x="0.0" y="-13.5" />
-                  <point x="0.0" y="13.5" />
-                </edge>
-              </edges>
-              <settings layout="Hierarchic Group" zoom="1.0" x="-7.0" y="179.5" />
-              <SelectedNodes>
-                <node>net.cloudburo.polkadot.types.base</node>
-              </SelectedNodes>
-              <Categories />
-              <SCOPE>All</SCOPE>
-              <VISIBILITY>private</VISIBILITY>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/net/cloudburo/polkadot/types/substrate/ContentId.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/net/cloudburo/polkadot/types/codec/CompactU32.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="102">
-              <caret line="8" column="5" lean-forward="true" selection-start-line="6" selection-start-column="4" selection-end-line="8" selection-end-column="5" />
+            <state relative-caret-position="122">
+              <caret line="30" column="26" selection-start-line="30" selection-start-column="26" selection-end-line="30" selection-end-column="26" />
               <folding>
                 <element signature="imports" expanded="true" />
+                <element signature="e#386#387#0" expanded="true" />
+                <element signature="e#428#429#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -273,18 +234,22 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="JUnit4 Test Class" />
         <option value="Class" />
+        <option value="JUnit4 Test Class" />
       </list>
     </option>
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>process</find>
       <find>getDec</find>
       <find>Hex</find>
       <find>hex</find>
       <find>Compact&lt;u32&gt;</find>
+      <find>decodeType</find>
+      <find>rawV</find>
+      <find>process</find>
+      <find>meta</find>
+      <find>leIntToByteArrayWithSize</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -293,63 +258,64 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/main/resources/log4j.xml" />
-        <option value="$PROJECT_DIR$/src/test/java/net/cloudburo/substrate/scalecodec/types/ScaleTypeFactoryTest.java" />
-        <option value="$PROJECT_DIR$/src/main/java/net/cloudburo/substrate/scalecodec/types/Compact.java" />
-        <option value="$PROJECT_DIR$/src/main/java/net/cloudburo/substrate/scalecodec/base/ScaleBytes.java" />
-        <option value="$PROJECT_DIR$/src/main/java/net/cloudburo/substrate/scalecodec/base/Helper.java" />
-        <option value="$PROJECT_DIR$/src/main/java/net/cloudburo/substrate/scalecodec/types/CompactU32.java" />
-        <option value="$PROJECT_DIR$/src/main/java/net/cloudburo/substrate/scalecodec/types/Vec.java" />
-        <option value="$PROJECT_DIR$/src/main/java/net/cloudburo/substrate/scalecodec/base/ScaleDecoder.java" />
-        <option value="$PROJECT_DIR$/src/main/java/net/cloudburo/substrate/scalecodec/base/AccountId.java" />
-        <option value="$PROJECT_DIR$/src/main/java/net/cloudburo/substrate/scalecodec/types/H256.java" />
-        <option value="$PROJECT_DIR$/src/test/java/net/cloudburo/substrate/scalecodec/base/ScaleDecoderTest.java" />
-        <option value="$PROJECT_DIR$/src/main/java/net/cloudburo/substrate/scalecodec/types/VecU32.java" />
-        <option value="$PROJECT_DIR$/src/main/java/net/cloudburo/substrate/scalecodec/types/ScaleTypeFactory.java" />
-        <option value="$PROJECT_DIR$/src/main/java/net/cloudburo/substrate/scalecodec/types/Bool.java" />
-        <option value="$PROJECT_DIR$/src/main/java/net/cloudburo/substrate/scalecodec/types/AttestedCandidate.java" />
-        <option value="$PROJECT_DIR$/src/main/java/net/cloudburo/substrate/scalecodec/types/AccountId.java" />
-        <option value="$PROJECT_DIR$/src/main/java/net/cloudburo/substrate/scalecodec/types/ContentId.java" />
-        <option value="$PROJECT_DIR$/src/main/java/net/cloudburo/substrate/scalecodec/types/Hash.java" />
-        <option value="$PROJECT_DIR$/src/main/java/net/cloudburo/substrate/scalecodec/types/SessionKey.java" />
-        <option value="$PROJECT_DIR$/README.md" />
-        <option value="$PROJECT_DIR$/src/main/java/net/cloudburo/substrate/scalecodec/ScaleTypeFactory.java" />
-        <option value="$PROJECT_DIR$/src/main/java/net/cloudburo/polkadot/types/ScaleTypeFactory.java" />
-        <option value="$PROJECT_DIR$/src/main/java/net/cloudburo/polkadot/types/TypeFactory.java" />
-        <option value="$PROJECT_DIR$/src/main/java/net/cloudburo/polkadot/types/primitives/ReferendumIndex.java" />
-        <option value="$PROJECT_DIR$/src/main/java/net/cloudburo/polkadot/types/primitives/ParaId.java" />
-        <option value="$PROJECT_DIR$/src/main/java/net/cloudburo/polkadot/types/base/ScaleType.java" />
-        <option value="$PROJECT_DIR$/src/main/java/net/cloudburo/polkadot/types/base/ScaleDecoder.java" />
-        <option value="$PROJECT_DIR$/src/main/java/net/cloudburo/polkadot/types/codec/U32.java" />
+        <option value="$PROJECT_DIR$/src/main/java/net/cloudburo/polkadot/types/primitives/AccountId.java" />
+        <option value="$PROJECT_DIR$/src/main/java/net/cloudburo/polkadot/types/primitives/Hash.java" />
+        <option value="$PROJECT_DIR$/src/main/java/net/cloudburo/polkadot/types/primitives/SessionKey.java" />
+        <option value="$PROJECT_DIR$/src/main/java/net/cloudburo/polkadot/types/substrate/SessionKey.java" />
+        <option value="$PROJECT_DIR$/src/main/java/net/cloudburo/polkadot/types/primitives/Option.java" />
+        <option value="$PROJECT_DIR$/src/main/java/net/cloudburo/polkadot/types/codec/UInt8Array.java" />
+        <option value="$PROJECT_DIR$/src/main/java/net/cloudburo/polkadot/types/codec/Option.java" />
+        <option value="$PROJECT_DIR$/src/main/java/net/cloudburo/polkadot/types/base/ScaleBytes.java" />
+        <option value="$PROJECT_DIR$/src/main/java/net/cloudburo/polkadot/types/codec/UIntBitLength.java" />
+        <option value="$PROJECT_DIR$/src/test/java/net/cloudburo/polkadot/types/codec/CompactU32Test.java" />
+        <option value="$PROJECT_DIR$/src/test/java/net/cloudburo/polkadot/types/primitives/AccountIdTest.java" />
+        <option value="$PROJECT_DIR$/src/test/java/net/cloudburo/polkadot/types/base/ScaleDecoderTest.java" />
+        <option value="$PROJECT_DIR$/src/test/java/net/cloudburo/polkadot/types/primitives/BoolTest.java" />
+        <option value="$PROJECT_DIR$/src/main/java/net/cloudburo/polkadot/types/base/PolkadotTypeException.java" />
         <option value="$PROJECT_DIR$/src/main/java/net/cloudburo/polkadot/types/primitives/AccountIndex.java" />
-        <option value="$PROJECT_DIR$/src/main/java/net/cloudburo/polkadot/types/primitives/ContentId.java" />
         <option value="$PROJECT_DIR$/src/main/java/net/cloudburo/polkadot/types/primitives/Moment.java" />
-        <option value="$PROJECT_DIR$/src/main/java/net/cloudburo/polkadot/types/substrate/AttestedCandidate.java" />
+        <option value="$PROJECT_DIR$/src/main/java/net/cloudburo/polkadot/types/substrate/BlockNumber.java" />
+        <option value="$PROJECT_DIR$/src/main/java/net/cloudburo/polkadot/types/substrate/MemberId.java" />
         <option value="$PROJECT_DIR$/src/main/java/net/cloudburo/polkadot/types/substrate/NewAccountOutcome.java" />
+        <option value="$PROJECT_DIR$/src/main/java/net/cloudburo/polkadot/types/substrate/PaidTermId.java" />
         <option value="$PROJECT_DIR$/src/main/java/net/cloudburo/polkadot/types/substrate/ParaId.java" />
         <option value="$PROJECT_DIR$/src/main/java/net/cloudburo/polkadot/types/substrate/Permill.java" />
         <option value="$PROJECT_DIR$/src/main/java/net/cloudburo/polkadot/types/substrate/PropIndex.java" />
         <option value="$PROJECT_DIR$/src/main/java/net/cloudburo/polkadot/types/substrate/ProposalIndex.java" />
         <option value="$PROJECT_DIR$/src/main/java/net/cloudburo/polkadot/types/substrate/ReferendumIndex.java" />
+        <option value="$PROJECT_DIR$/src/main/java/net/cloudburo/polkadot/types/substrate/SubscriptionId.java" />
         <option value="$PROJECT_DIR$/src/main/java/net/cloudburo/polkadot/types/substrate/VoteIndex.java" />
-        <option value="$PROJECT_DIR$/src/main/java/net/cloudburo/polkadot/types/primitives/Bool.java" />
-        <option value="$PROJECT_DIR$/src/main/java/net/cloudburo/polkadot/types/primitives/AccountId.java" />
+        <option value="$PROJECT_DIR$/src/main/java/net/cloudburo/polkadot/types/base/Helper.java" />
+        <option value="$PROJECT_DIR$/src/main/java/net/cloudburo/polkadot/types/base/ScaleDecoder.java" />
+        <option value="$PROJECT_DIR$/src/main/java/net/cloudburo/polkadot/types/base/ScaleType.java" />
+        <option value="$PROJECT_DIR$/src/main/java/net/cloudburo/polkadot/types/codec/ScaleUInt.java" />
+        <option value="$PROJECT_DIR$/src/main/java/net/cloudburo/polkadot/types/codec/Compact.java" />
+        <option value="$PROJECT_DIR$/src/main/java/net/cloudburo/polkadot/types/common/bn/BN.java" />
         <option value="$PROJECT_DIR$/src/main/java/net/cloudburo/polkadot/types/primitives/H256.java" />
-        <option value="$PROJECT_DIR$/src/main/java/net/cloudburo/polkadot/types/primitives/Hash.java" />
-        <option value="$PROJECT_DIR$/src/main/java/net/cloudburo/polkadot/types/primitives/SessionKey.java" />
-        <option value="$PROJECT_DIR$/src/main/java/net/cloudburo/polkadot/types/substrate/SessionKey.java" />
+        <option value="$PROJECT_DIR$/src/main/java/net/cloudburo/polkadot/types/primitives/H512.java" />
+        <option value="$PROJECT_DIR$/src/main/java/net/cloudburo/polkadot/types/primitives/H160.java" />
+        <option value="$PROJECT_DIR$/src/main/java/net/cloudburo/polkadot/types/primitives/Bytes.java" />
+        <option value="$PROJECT_DIR$/src/main/java/net/cloudburo/polkadot/types/codec/VecU32.java" />
+        <option value="$PROJECT_DIR$/src/main/java/net/cloudburo/polkadot/types/codec/CompactU32.java" />
+        <option value="$PROJECT_DIR$/src/test/java/net/cloudburo/polkadot/types/common/HelperTest.java" />
+        <option value="$PROJECT_DIR$/README.md" />
+        <option value="$PROJECT_DIR$/src/main/java/net/cloudburo/polkadot/types/common/Helper.java" />
+        <option value="$PROJECT_DIR$/src/test/java/net/cloudburo/polkadot/types/codec/UIntTest.java" />
+        <option value="$PROJECT_DIR$/src/main/java/net/cloudburo/polkadot/types/primitives/U8.java" />
+        <option value="$PROJECT_DIR$/src/main/java/net/cloudburo/polkadot/types/primitives/U16.java" />
         <option value="$PROJECT_DIR$/src/main/java/net/cloudburo/polkadot/types/primitives/U32.java" />
         <option value="$PROJECT_DIR$/src/main/java/net/cloudburo/polkadot/types/primitives/U64.java" />
-        <option value="$PROJECT_DIR$/src/main/java/net/cloudburo/polkadot/types/substrate/BlockNumber.java" />
-        <option value="$PROJECT_DIR$/src/main/java/net/cloudburo/polkadot/types/substrate/MemberId.java" />
-        <option value="$PROJECT_DIR$/src/main/java/net/cloudburo/polkadot/types/substrate/PaidTermId.java" />
-        <option value="$PROJECT_DIR$/src/main/java/net/cloudburo/polkadot/types/substrate/SubscriptionId.java" />
+        <option value="$PROJECT_DIR$/src/main/java/net/cloudburo/polkadot/types/primitives/U128.java" />
+        <option value="$PROJECT_DIR$/src/main/java/net/cloudburo/polkadot/types/primitives/U256.java" />
+        <option value="$PROJECT_DIR$/src/main/java/net/cloudburo/polkadot/types/codec/AbstractInt.java" />
+        <option value="$PROJECT_DIR$/src/main/java/net/cloudburo/polkadot/types/codec/UInt.java" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="12" />
-    <option name="width" value="942" />
+    <option name="x" value="445" />
+    <option name="y" value="22" />
+    <option name="width" value="868" />
     <option name="height" value="1039" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
@@ -398,7 +364,7 @@
               <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="types" type="462c0819:PsiDirectoryNode" />
-              <item name="primitives" type="462c0819:PsiDirectoryNode" />
+              <item name="common" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="scale-codec" type="b2602c69:ProjectViewProjectNode" />
@@ -407,13 +373,53 @@
               <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="types" type="462c0819:PsiDirectoryNode" />
-              <item name="substrate" type="462c0819:PsiDirectoryNode" />
+              <item name="primitives" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="scale-codec" type="b2602c69:ProjectViewProjectNode" />
+              <item name="scale-codec" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="scale-codec" type="b2602c69:ProjectViewProjectNode" />
               <item name="scale-codec" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="test" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+            </path>
+            <path>
+              <item name="scale-codec" type="b2602c69:ProjectViewProjectNode" />
+              <item name="scale-codec" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="scale-codec" type="b2602c69:ProjectViewProjectNode" />
+              <item name="scale-codec" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="types" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="scale-codec" type="b2602c69:ProjectViewProjectNode" />
+              <item name="scale-codec" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="types" type="462c0819:PsiDirectoryNode" />
+              <item name="codec" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="scale-codec" type="b2602c69:ProjectViewProjectNode" />
+              <item name="scale-codec" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="types" type="462c0819:PsiDirectoryNode" />
+              <item name="common" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="scale-codec" type="b2602c69:ProjectViewProjectNode" />
@@ -439,19 +445,23 @@
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit4" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit4" value="" />
     <property name="last_directory_selection" value="$PROJECT_DIR$/src/main/java/net/cloudburo/substrate/scalecodec" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../polkadot-js" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="nodejs_package_manager_path" value="npm" />
-    <property name="project.structure.last.edited" value="Project" />
+    <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.0" />
     <property name="settings.editor.selected.configurable" value="reference.settingsdialog.project.gradle" />
   </component>
   <component name="RecentsManager">
     <key name="CreateTestDialog.RecentsKey">
+      <recent name="net.cloudburo.polkadot.types.common" />
+      <recent name="net.cloudburo.polkadot.types.primitives" />
+      <recent name="net.cloudburo.polkadot.types.codec" />
       <recent name="net.cloudburo.substrate.scalecodec.types" />
       <recent name="net.cloudburo.substrate.scalecodec.base" />
     </key>
@@ -471,13 +481,93 @@
       </list>
     </option>
   </component>
-  <component name="RunManager">
-    <configuration name="ScaleDecoderTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+  <component name="RunManager" selected="Gradle.UIntTest">
+    <configuration name="AccountIdTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
         <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" value="--tests &quot;net.cloudburo.substrate.scalecodec.base.ScaleDecoderTest&quot;" />
+        <option name="scriptParameters" value="--tests &quot;net.cloudburo.polkadot.types.primitives.AccountIdTest&quot;" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":cleanTest" />
+            <option value=":test" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <GradleScriptDebugEnabled>false</GradleScriptDebugEnabled>
+      <method v="2" />
+    </configuration>
+    <configuration name="BoolTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="--tests &quot;net.cloudburo.polkadot.types.primitives.BoolTest&quot;" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":cleanTest" />
+            <option value=":test" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <GradleScriptDebugEnabled>false</GradleScriptDebugEnabled>
+      <method v="2" />
+    </configuration>
+    <configuration name="HelperTest.bigIntegerToByteArrayWithSize" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="--tests &quot;net.cloudburo.polkadot.types.common.HelperTest.bigIntegerToByteArrayWithSize&quot;" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":cleanTest" />
+            <option value=":test" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <GradleScriptDebugEnabled>false</GradleScriptDebugEnabled>
+      <method v="2" />
+    </configuration>
+    <configuration name="HelperTest.leBigIntegerToByteArrayWithSize" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="--tests &quot;net.cloudburo.polkadot.types.common.HelperTest.leBigIntegerToByteArrayWithSize&quot;" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":cleanTest" />
+            <option value=":test" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <GradleScriptDebugEnabled>false</GradleScriptDebugEnabled>
+      <method v="2" />
+    </configuration>
+    <configuration name="UIntTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="--tests &quot;net.cloudburo.polkadot.types.codec.UIntTest&quot; --info" />
         <option name="taskDescriptions">
           <list />
         </option>
@@ -494,7 +584,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Gradle.ScaleDecoderTest" />
+        <item itemvalue="Gradle.UIntTest" />
+        <item itemvalue="Gradle.HelperTest.bigIntegerToByteArrayWithSize" />
+        <item itemvalue="Gradle.HelperTest.leBigIntegerToByteArrayWithSize" />
+        <item itemvalue="Gradle.BoolTest" />
+        <item itemvalue="Gradle.AccountIdTest" />
       </list>
     </recent_temporary>
   </component>
@@ -512,7 +606,13 @@
       <workItem from="1559213044224" duration="13691000" />
       <workItem from="1559677507395" duration="10360000" />
       <workItem from="1559763581019" duration="26744000" />
-      <workItem from="1560488741620" duration="8187000" />
+      <workItem from="1560488741620" duration="9790000" />
+      <workItem from="1560599694058" duration="599000" />
+      <workItem from="1560668814718" duration="636000" />
+      <workItem from="1561493163854" duration="8141000" />
+      <workItem from="1561526705723" duration="12416000" />
+      <workItem from="1561569013239" duration="54297000" />
+      <workItem from="1561847888139" duration="5238000" />
     </task>
     <task id="LOCAL-00001" summary="Initial commit">
       <created>1559213709047</created>
@@ -549,62 +649,70 @@
       <option name="project" value="LOCAL" />
       <updated>1560206344167</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="Added Types">
+      <created>1560516687919</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1560516687919</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="ScaleDecoderTest - 2019.06.14 at 00h 04m 45s.xml">
-      <configuration name="ScaleDecoderTest" configurationId="GradleRunConfiguration" />
+    <history-entry file="UIntTest - 2019.06.29 at 18h 10m 09s.xml">
+      <configuration name="UIntTest" configurationId="GradleRunConfiguration" />
     </history-entry>
-    <history-entry file="ScaleDecoderTest - 2019.06.14 at 00h 19m 11s.xml">
-      <configuration name="ScaleDecoderTest" configurationId="GradleRunConfiguration" />
+    <history-entry file="UIntTest - 2019.06.29 at 18h 10m 11s.xml">
+      <configuration name="UIntTest" configurationId="GradleRunConfiguration" />
     </history-entry>
-    <history-entry file="ScaleDecoderTest - 2019.06.14 at 00h 34m 40s.xml">
-      <configuration name="ScaleDecoderTest" configurationId="GradleRunConfiguration" />
+    <history-entry file="UIntTest - 2019.06.30 at 07h 44m 12s.xml">
+      <configuration name="UIntTest" configurationId="GradleRunConfiguration" />
     </history-entry>
-    <history-entry file="ScaleDecoderTest - 2019.06.14 at 00h 37m 30s.xml">
-      <configuration name="ScaleDecoderTest" configurationId="GradleRunConfiguration" />
+    <history-entry file="UIntTest - 2019.06.30 at 07h 44m 55s.xml">
+      <configuration name="UIntTest" configurationId="GradleRunConfiguration" />
     </history-entry>
-    <history-entry file="ScaleDecoderTest - 2019.06.14 at 01h 05m 47s.xml">
-      <configuration name="ScaleDecoderTest" configurationId="GradleRunConfiguration" />
+    <history-entry file="UIntTest - 2019.06.30 at 07h 45m 56s.xml">
+      <configuration name="UIntTest" configurationId="GradleRunConfiguration" />
     </history-entry>
-    <history-entry file="ScaleDecoderTest - 2019.06.14 at 01h 09m 50s.xml">
-      <configuration name="ScaleDecoderTest" configurationId="GradleRunConfiguration" />
+    <history-entry file="UIntTest - 2019.06.30 at 07h 48m 46s.xml">
+      <configuration name="UIntTest" configurationId="GradleRunConfiguration" />
     </history-entry>
-    <history-entry file="ScaleDecoderTest - 2019.06.14 at 01h 13m 36s.xml">
-      <configuration name="ScaleDecoderTest" configurationId="GradleRunConfiguration" />
+    <history-entry file="UIntTest - 2019.06.30 at 07h 49m 08s.xml">
+      <configuration name="UIntTest" configurationId="GradleRunConfiguration" />
     </history-entry>
-    <history-entry file="ScaleDecoderTest - 2019.06.14 at 01h 16m 36s.xml">
-      <configuration name="ScaleDecoderTest" configurationId="GradleRunConfiguration" />
+    <history-entry file="UIntTest - 2019.06.30 at 07h 49m 10s.xml">
+      <configuration name="UIntTest" configurationId="GradleRunConfiguration" />
     </history-entry>
-    <history-entry file="ScaleDecoderTest - 2019.06.14 at 01h 17m 24s.xml">
-      <configuration name="ScaleDecoderTest" configurationId="GradleRunConfiguration" />
+    <history-entry file="UIntTest - 2019.06.30 at 07h 49m 58s.xml">
+      <configuration name="UIntTest" configurationId="GradleRunConfiguration" />
     </history-entry>
-    <history-entry file="ScaleDecoderTest - 2019.06.14 at 08h 07m 15s.xml">
-      <configuration name="ScaleDecoderTest" configurationId="GradleRunConfiguration" />
+    <history-entry file="UIntTest - 2019.06.30 at 07h 49m 59s.xml">
+      <configuration name="UIntTest" configurationId="GradleRunConfiguration" />
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="87437000" />
+    <option name="totallyTimeSpent" value="170367000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="746" y="0" width="790" height="831" extended-state="0" />
+    <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info id="Favorites" order="0" side_tool="true" />
       <window_info id="Designer" order="1" />
-      <window_info active="true" content_ui="combo" id="Project" order="2" visible="true" weight="0.45753425" />
+      <window_info active="true" content_ui="combo" id="Project" order="2" visible="true" weight="0.21610738" />
       <window_info id="Structure" order="3" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="Messages" order="0" sideWeight="0.49924925" weight="0.3298193" />
-      <window_info anchor="bottom" id="Version Control" order="1" sideWeight="0.49924925" visible="true" weight="0.3319027" />
-      <window_info anchor="bottom" id="Terminal" order="2" sideWeight="0.4984985" weight="0.32719547" />
-      <window_info anchor="bottom" id="Build" order="3" weight="0.10490694" />
-      <window_info anchor="bottom" id="Database Changes" order="4" />
-      <window_info anchor="bottom" id="Event Log" order="5" sideWeight="0.5007508" side_tool="true" weight="0.48441926" />
-      <window_info anchor="bottom" id="Docker" order="6" />
+      <window_info anchor="bottom" id="Version Control" order="1" sideWeight="0.49924925" weight="0.32904148" />
+      <window_info anchor="bottom" id="Docker" order="2" weight="0.3295129" />
+      <window_info anchor="bottom" id="Terminal" order="3" sideWeight="0.4984985" weight="0.32719547" />
+      <window_info anchor="bottom" id="Build" order="4" weight="0.10490694" />
+      <window_info anchor="bottom" id="Database Changes" order="5" />
+      <window_info anchor="bottom" id="Event Log" order="6" sideWeight="0.179093" side_tool="true" weight="0.08923513" />
       <window_info anchor="bottom" id="Message" order="7" />
-      <window_info anchor="bottom" id="Find" order="8" weight="0.3495702" />
-      <window_info anchor="bottom" id="Run" order="9" weight="0.3190272" />
-      <window_info anchor="bottom" id="Debug" order="10" weight="0.3252149" />
+      <window_info anchor="bottom" id="Find" order="8" sideWeight="0.49884704" weight="0.3490566" />
+      <window_info anchor="bottom" id="Run" order="9" sideWeight="0.64642584" visible="true" weight="0.398017" />
+      <window_info anchor="bottom" id="Debug" order="10" sideWeight="0.820907" weight="0.3526912" />
       <window_info anchor="bottom" id="Cvs" order="11" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="12" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="13" />
@@ -615,10 +723,40 @@
       <window_info anchor="right" id="SciView" order="4" />
       <window_info anchor="right" id="Database" order="5" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="6" type="SLIDING" weight="0.4" />
-      <window_info anchor="right" id="Ant Build" order="7" weight="0.25" />
-      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="8" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="7" weight="0.25" />
+      <window_info anchor="right" id="Ant Build" order="8" weight="0.47572815" />
       <window_info anchor="right" id="PlantUML" order="9" />
     </layout>
+    <layout-to-restore>
+      <window_info id="Favorites" order="0" side_tool="true" />
+      <window_info id="Designer" order="1" />
+      <window_info content_ui="combo" id="Project" order="2" visible="true" weight="0.15100671" />
+      <window_info id="Structure" order="3" side_tool="true" weight="0.25" />
+      <window_info anchor="bottom" id="Messages" order="0" sideWeight="0.49924925" weight="0.3298193" />
+      <window_info anchor="bottom" id="Version Control" order="1" sideWeight="0.49924925" weight="0.32904148" />
+      <window_info anchor="bottom" id="Docker" order="2" weight="0.3295129" />
+      <window_info anchor="bottom" id="Terminal" order="3" sideWeight="0.4984985" weight="0.32719547" />
+      <window_info anchor="bottom" id="Build" order="4" weight="0.10490694" />
+      <window_info anchor="bottom" id="Database Changes" order="5" />
+      <window_info anchor="bottom" id="Event Log" order="6" sideWeight="0.179093" side_tool="true" visible="true" weight="0.08923513" />
+      <window_info anchor="bottom" id="Message" order="7" />
+      <window_info anchor="bottom" id="Find" order="8" sideWeight="0.49884704" weight="0.3490566" />
+      <window_info anchor="bottom" id="Run" order="9" sideWeight="0.64642584" weight="0.39937106" />
+      <window_info active="true" anchor="bottom" id="Debug" order="10" sideWeight="0.820907" visible="true" weight="0.0990566" />
+      <window_info anchor="bottom" id="Cvs" order="11" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="12" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="13" />
+      <window_info anchor="right" id="Gradle" order="0" weight="0.3295302" />
+      <window_info anchor="right" id="Mongo Explorer" order="1" />
+      <window_info anchor="right" id="Palette&#9;" order="2" />
+      <window_info anchor="right" id="Maven" order="3" />
+      <window_info anchor="right" id="SciView" order="4" />
+      <window_info anchor="right" id="Database" order="5" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="6" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="7" weight="0.25" />
+      <window_info anchor="right" id="Ant Build" order="8" weight="0.47572815" />
+      <window_info anchor="right" id="PlantUML" order="9" />
+    </layout-to-restore>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
@@ -627,7 +765,8 @@
     <MESSAGE value="Initial commit" />
     <MESSAGE value="CompactU32 tested" />
     <MESSAGE value="License added" />
-    <option name="LAST_COMMIT_MESSAGE" value="License added" />
+    <MESSAGE value="Added Types" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added Types" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -644,383 +783,117 @@
           <properties />
           <option name="timeStamp" value="36" />
         </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/net/cloudburo/polkadot/types/common/HelperTest.java</url>
+          <line>13</line>
+          <properties />
+          <option name="timeStamp" value="85" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/net/cloudburo/polkadot/types/codec/UIntTest.java</url>
+          <line>28</line>
+          <properties />
+          <option name="timeStamp" value="93" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/net/cloudburo/polkadot/types/codec/UIntTest.java</url>
+          <line>23</line>
+          <properties />
+          <option name="timeStamp" value="95" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/net/cloudburo/polkadot/types/codec/UIntTest.java</url>
+          <line>22</line>
+          <properties />
+          <option name="timeStamp" value="96" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/net/cloudburo/polkadot/types/codec/UIntTest.java</url>
+          <line>19</line>
+          <properties />
+          <option name="timeStamp" value="97" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-method">
+          <url>file://$PROJECT_DIR$/src/main/java/net/cloudburo/polkadot/types/codec/Compact.java</url>
+          <line>58</line>
+          <properties class="net.cloudburo.polkadot.types.codec.Compact" method="process">
+            <option name="EMULATED" value="true" />
+          </properties>
+          <option name="timeStamp" value="38" />
+        </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
+  </component>
+  <component name="antWorkspaceConfiguration">
+    <option name="IS_AUTOSCROLL_TO_SOURCE" value="false" />
+    <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="debuggerHistoryManager">
     <expressions id="evaluateExpression">
       <expression>
-        <expression-string>this.data.length</expression-string>
+        <expression-string>ui.toU8().getDataAsHex()</expression-string>
         <language-id>JAVA</language-id>
         <evaluation-mode>EXPRESSION</evaluation-mode>
       </expression>
       <expression>
-        <expression-string>data.substring(2)</expression-string>
+        <expression-string>ui.toU8().getDataAsHex().equals(&quot;0000000000000006&quot;)</expression-string>
         <language-id>JAVA</language-id>
         <evaluation-mode>EXPRESSION</evaluation-mode>
       </expression>
       <expression>
-        <expression-string>data</expression-string>
+        <expression-string>i.toU8().getDataAsHex()</expression-string>
+        <language-id>JAVA</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>bb.array().length</expression-string>
+        <language-id>JAVA</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>bb.capacity()</expression-string>
+        <language-id>JAVA</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>i</expression-string>
+        <language-id>JAVA</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>Integer.SIZE</expression-string>
+        <language-id>JAVA</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>len</expression-string>
+        <language-id>JAVA</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>Arrays.asList(bi.toByteArray()).subList(0, bl.bitLength).toArray()</expression-string>
         <language-id>JAVA</language-id>
         <evaluation-mode>EXPRESSION</evaluation-mode>
       </expression>
     </expressions>
   </component>
   <component name="editorHistoryManager">
-    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/junit/junit/4.12/a6c32b40bf3d76eca54e3c601e5d1470c86fcdfa/junit-4.12-sources.jar!/org/junit/internal/runners/statements/InvokeMethod.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="16" selection-start-line="16" selection-end-line="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/junit/junit/4.12/a6c32b40bf3d76eca54e3c601e5d1470c86fcdfa/junit-4.12-sources.jar!/org/junit/runners/ParentRunner.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="118">
-          <caret line="268" selection-start-line="268" selection-end-line="268" />
-          <folding>
-            <element signature="e#2922#2923#0" expanded="true" />
-            <element signature="e#2966#2967#0" expanded="true" />
-            <element signature="e#10310#10449#0" expanded="true" />
-            <element signature="e#11040#11204#0" expanded="true" />
-            <element signature="e#11203#11204#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/junit/junit/4.12/a6c32b40bf3d76eca54e3c601e5d1470c86fcdfa/junit-4.12-sources.jar!/org/junit/internal/runners/statements/RunBefores.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="259">
-          <caret line="26" selection-start-line="26" selection-end-line="26" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/junit/junit/4.12/a6c32b40bf3d76eca54e3c601e5d1470c86fcdfa/junit-4.12-sources.jar!/org/junit/runners/BlockJUnit4ClassRunner.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="126">
-          <caret line="79" selection-start-line="79" selection-end-line="79" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://C:/Program Files/jdk-12/lib/src.zip!/java.base/java/lang/Character.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170476">
-          <caret line="10139" column="22" selection-start-line="10139" selection-start-column="22" selection-end-line="10139" selection-end-column="22" />
-          <folding>
-            <element signature="e#400758#400759#0" expanded="true" />
-            <element signature="e#400802#400803#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/net/cloudburo/polkadot/types/base/InvalidScaleTypeValueException.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://C:/Program Files/jdk-12/lib/src.zip!/java.base/java/util/Arrays.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="205">
-          <caret line="4026" column="25" selection-start-line="4026" selection-start-column="25" selection-end-line="4026" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://C:/Program Files/jdk-12/lib/src.zip!/java.base/java/math/BigInteger.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="154">
-          <caret line="130" column="13" selection-start-line="130" selection-start-column="13" selection-end-line="130" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/build/reports/tests/test/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="1" column="6" lean-forward="true" selection-end-line="1" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/commons-codec/commons-codec/1.12/bf72d17429b490b08c63d8f06a3cb7b2b52a7250/commons-codec-1.12-sources.jar!/org/apache/commons/codec/binary/Hex.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="199">
-          <caret line="224" column="25" selection-start-line="224" selection-start-column="25" selection-end-line="224" selection-end-column="25" />
-          <folding>
-            <element signature="e#8980#8981#0" expanded="true" />
-            <element signature="e#9030#9031#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://C:/Program Files/jdk-12/lib/src.zip!/java.base/java/lang/Integer.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="148">
-          <caret line="1573" column="36" selection-start-line="1573" selection-start-column="36" selection-end-line="1573" selection-end-column="36" />
-          <folding>
-            <element signature="e#59409#59410#0" expanded="true" />
-            <element signature="e#59469#59470#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/LICENSE">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="jar://C:/Program Files/jdk-12/lib/src.zip!/java.base/java/nio/ByteBuffer.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="403">
-          <caret line="1038" column="24" selection-start-line="1038" selection-start-column="24" selection-end-line="1038" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/net/cloudburo/polkadot/types/base/Helper.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="192">
-          <caret line="55" column="22" selection-start-line="55" selection-start-column="22" selection-end-line="55" selection-end-column="22" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#1493#1494#0" expanded="true" />
-            <element signature="e#1556#1557#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://C:/Program Files/jdk-12/lib/src.zip!/java.base/java/nio/Buffer.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="148">
-          <caret line="667" column="18" selection-start-line="667" selection-start-column="18" selection-end-line="667" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/junit/junit/4.12/a6c32b40bf3d76eca54e3c601e5d1470c86fcdfa/junit-4.12-sources.jar!/org/junit/internal/runners/model/ReflectiveCallable.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="13" selection-start-line="13" selection-end-line="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/net/cloudburo/polkadot/types/codec/TypeFactoryTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="11" column="1" lean-forward="true" selection-start-line="11" selection-start-column="1" selection-end-line="11" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/net/cloudburo/polkadot/types/base/ScaleDecoderTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="223">
-          <caret line="73" column="48" lean-forward="true" selection-start-line="73" selection-start-column="41" selection-end-line="73" selection-end-column="62" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/net/cloudburo/polkadot/types/codec/CompactU32.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="16" column="43" lean-forward="true" selection-start-line="16" selection-start-column="43" selection-end-line="16" selection-end-column="43" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#306#307#0" expanded="true" />
-            <element signature="e#348#349#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/net/cloudburo/polkadot/types/codec/Compact.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="32">
-          <caret line="9" column="13" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#626#627#0" expanded="true" />
-            <element signature="e#662#663#0" expanded="true" />
-            <element signature="e#701#702#0" expanded="true" />
-            <element signature="e#736#737#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/net/cloudburo/polkadot/types/codec/VecU32.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="253">
-          <caret line="20" column="76" selection-start-line="20" selection-start-column="64" selection-end-line="20" selection-end-column="76" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/net/cloudburo/polkadot/types/TypeFactory.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="522">
-          <caret line="69" selection-start-line="69" selection-end-line="69" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/README.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="170">
-            <caret line="10" lean-forward="true" selection-start-line="9" selection-start-column="2" selection-end-line="10" />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/net/cloudburo/polkadot/types/base/ScaleBytes.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="11" column="13" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/net/cloudburo/polkadot/types/base/ScaleDecoder.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="17" column="4" lean-forward="true" selection-start-line="17" selection-start-column="4" selection-end-line="17" selection-end-column="4" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/net/cloudburo/polkadot/types/substrate/ReferendumIndex.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="9" column="13" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/net/cloudburo/polkadot/types/substrate/ProposalIndex.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/net/cloudburo/polkadot/types/substrate/PropIndex.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="9" column="13" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/net/cloudburo/polkadot/types/substrate/Permill.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="11" column="5" selection-start-line="11" selection-start-column="5" selection-end-line="11" selection-end-column="5" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/net/cloudburo/polkadot/types/substrate/ParaId.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/net/cloudburo/polkadot/types/substrate/NewAccountOutcome.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/net/cloudburo/polkadot/types/substrate/AttestedCandidate.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="11" column="5" lean-forward="true" selection-start-line="9" selection-start-column="28" selection-end-line="11" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/net/cloudburo/polkadot/types/base/ScaleType.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="6" column="22" selection-start-line="6" selection-start-column="22" selection-end-line="6" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/net/cloudburo/polkadot/types/substrate/SessionKey.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="6" column="12" selection-start-line="6" selection-start-column="12" selection-end-line="6" selection-end-column="12" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#194#195#0" expanded="true" />
-            <element signature="e#221#222#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/net/cloudburo/polkadot/types/primitives/AccountId.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="5" column="57" selection-start-line="5" selection-start-column="57" selection-end-line="5" selection-end-column="57" />
-          <folding>
-            <element signature="e#193#194#0" expanded="true" />
-            <element signature="e#220#221#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/net/cloudburo/polkadot/types/primitives/AccountIndex.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
-          <folding>
-            <element signature="e#341#342#0" expanded="true" />
-            <element signature="e#368#369#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/net/cloudburo/polkadot/types/primitives/Bool.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="7" column="51" selection-start-line="7" selection-start-column="51" selection-end-line="7" selection-end-column="51" />
-          <folding>
-            <element signature="e#314#315#0" expanded="true" />
-            <element signature="e#347#348#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/net/cloudburo/polkadot/types/primitives/H256.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="125">
-          <caret line="13" column="13" selection-start-line="13" selection-start-column="13" selection-end-line="13" selection-end-column="13" />
+        <state relative-caret-position="204">
+          <caret line="12" column="5" lean-forward="true" selection-start-line="12" selection-start-column="5" selection-end-line="12" selection-end-column="5" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#481#482#0" expanded="true" />
-            <element signature="e#523#524#0" expanded="true" />
-            <element signature="e#558#559#0" expanded="true" />
-            <element signature="e#591#592#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/net/cloudburo/polkadot/types/primitives/Moment.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="12" column="5" lean-forward="true" selection-start-line="12" selection-start-column="5" selection-end-line="12" selection-end-column="5" />
+          <folding>
+            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1029,146 +902,331 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="85">
           <caret line="5" column="95" selection-start-line="5" selection-start-column="95" selection-end-line="5" selection-end-column="95" />
-          <folding>
-            <element signature="e#182#183#0" expanded="true" />
-            <element signature="e#209#210#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/net/cloudburo/polkadot/types/primitives/Moment.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/net/cloudburo/polkadot/types/primitives/Bool.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="11" column="20" lean-forward="true" selection-start-line="11" selection-start-column="20" selection-end-line="11" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/net/cloudburo/polkadot/types/substrate/BlockNumber.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="14" lean-forward="true" selection-start-line="14" selection-end-line="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/net/cloudburo/polkadot/types/substrate/MemberId.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="136">
-          <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
+          <caret line="10" column="66" selection-start-line="10" selection-start-column="66" selection-end-line="10" selection-end-column="66" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/net/cloudburo/polkadot/types/substrate/NewAccountOutcome.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="10" column="75" selection-start-line="10" selection-start-column="75" selection-end-line="10" selection-end-column="75" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/net/cloudburo/polkadot/types/substrate/PaidTermId.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="11" column="68" selection-start-line="11" selection-start-column="68" selection-end-line="11" selection-end-column="68" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/net/cloudburo/polkadot/types/substrate/ParaId.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="10" column="64" selection-start-line="10" selection-start-column="64" selection-end-line="10" selection-end-column="64" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/net/cloudburo/polkadot/types/substrate/Permill.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="10" column="65" selection-start-line="10" selection-start-column="65" selection-end-line="10" selection-end-column="65" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/net/cloudburo/polkadot/types/substrate/PropIndex.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="10" column="66" selection-start-line="10" selection-start-column="66" selection-end-line="10" selection-end-column="66" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/net/cloudburo/polkadot/types/substrate/ReferendumIndex.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="11" column="73" selection-start-line="11" selection-start-column="73" selection-end-line="11" selection-end-column="73" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/net/cloudburo/polkadot/types/substrate/SessionKey.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="9" column="38" lean-forward="true" selection-start-line="9" selection-start-column="38" selection-end-line="9" selection-end-column="38" />
           <folding>
-            <element signature="e#232#233#0" expanded="true" />
-            <element signature="e#287#288#0" expanded="true" />
+            <element signature="e#338#339#0" expanded="true" />
+            <element signature="e#365#366#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="uml://JAVA/net.cloudburo.polkadot.types.codec">
-      <provider selected="true" editor-type-id="UmlEditorProvider">
-        <state>
-          <ID>JAVA</ID>
-          <OriginalElement>net.cloudburo.polkadot.types.codec</OriginalElement>
-          <nodes>
-            <node x="0.0" y="149.0">net.cloudburo.polkadot.types.codec.TypeFactoryTest</node>
-            <node x="0.0" y="221.0">net.cloudburo.polkadot.types.codec.VecU32</node>
-            <node x="11.0" y="0.0">net.cloudburo.polkadot.types.codec.Compact</node>
-            <node x="0.0" y="77.0">net.cloudburo.polkadot.types.codec.CompactU32</node>
-          </nodes>
-          <notes />
-          <edges>
-            <edge source="net.cloudburo.polkadot.types.codec.CompactU32" target="net.cloudburo.polkadot.types.codec.Compact">
-              <point x="0.0" y="-13.5" />
-              <point x="0.0" y="13.5" />
-            </edge>
-          </edges>
-          <settings layout="Hierarchic Group" zoom="1.0" x="-81.5" y="217.0" />
-          <SelectedNodes>
-            <node>net.cloudburo.polkadot.types.codec.VecU32</node>
-          </SelectedNodes>
-          <Categories />
-          <SCOPE>All</SCOPE>
-          <VISIBILITY>private</VISIBILITY>
-        </state>
-      </provider>
-    </entry>
-    <entry file="uml://JAVA/net.cloudburo.polkadot.types">
-      <provider selected="true" editor-type-id="UmlEditorProvider">
-        <state>
-          <ID>JAVA</ID>
-          <OriginalElement>net.cloudburo.polkadot.types</OriginalElement>
-          <nodes>
-            <node x="102.0" y="0.0">net.cloudburo.polkadot.types.base</node>
-            <node x="3.5" y="154.0">net.cloudburo.polkadot.types.substrate</node>
-            <node x="0.0" y="226.0">net.cloudburo.polkadot.types.TypeFactory</node>
-            <node x="0.0" y="77.0">net.cloudburo.polkadot.types.primitives</node>
-            <node x="179.0" y="77.0">net.cloudburo.polkadot.types.codec</node>
-          </nodes>
-          <notes />
-          <edges>
-            <edge source="net.cloudburo.polkadot.types.primitives" target="net.cloudburo.polkadot.types.base">
-              <point x="0.0" y="-13.5" />
-              <point x="79.5" y="52.0" />
-              <point x="131.0" y="52.0" />
-              <point x="-29.0" y="13.5" />
-            </edge>
-            <edge source="net.cloudburo.polkadot.types.codec" target="net.cloudburo.polkadot.types.base">
-              <point x="0.0" y="-13.5" />
-              <point x="240.5" y="52.0" />
-              <point x="189.0" y="52.0" />
-              <point x="29.0" y="13.5" />
-            </edge>
-            <edge source="net.cloudburo.polkadot.types.substrate" target="net.cloudburo.polkadot.types.primitives">
-              <point x="0.0" y="-13.5" />
-              <point x="0.0" y="13.5" />
-            </edge>
-          </edges>
-          <settings layout="Hierarchic Group" zoom="1.0" x="-7.0" y="179.5" />
-          <SelectedNodes>
-            <node>net.cloudburo.polkadot.types.base</node>
-          </SelectedNodes>
-          <Categories />
-          <SCOPE>All</SCOPE>
-          <VISIBILITY>private</VISIBILITY>
-        </state>
-      </provider>
-    </entry>
-    <entry file="uml://JAVA/net.cloudburo.polkadot.types.primitives">
-      <provider selected="true" editor-type-id="UmlEditorProvider">
-        <state>
-          <ID>JAVA</ID>
-          <OriginalElement>net.cloudburo.polkadot.types.primitives</OriginalElement>
-          <nodes>
-            <node x="109.0" y="77.0">net.cloudburo.polkadot.types.primitives.AccountIndex</node>
-            <node x="76.25" y="0.0">net.cloudburo.polkadot.types.primitives.U32</node>
-            <node x="249.0" y="149.0">net.cloudburo.polkadot.types.primitives.Bool</node>
-            <node x="130.0" y="226.0">net.cloudburo.polkadot.types.primitives.Hash</node>
-            <node x="0.0" y="226.0">net.cloudburo.polkadot.types.primitives.AccountId</node>
-            <node x="0.0" y="77.0">net.cloudburo.polkadot.types.primitives.Moment</node>
-            <node x="74.0" y="149.0">net.cloudburo.polkadot.types.primitives.H256</node>
-          </nodes>
-          <notes />
-          <edges>
-            <edge source="net.cloudburo.polkadot.types.primitives.Moment" target="net.cloudburo.polkadot.types.primitives.U32">
-              <point x="0.0" y="-13.5" />
-              <point x="44.5" y="52.0" />
-              <point x="93.0" y="52.0" />
-              <point x="-16.75" y="13.5" />
-            </edge>
-            <edge source="net.cloudburo.polkadot.types.primitives.Hash" target="net.cloudburo.polkadot.types.primitives.H256">
-              <point x="0.0" y="-13.5" />
-              <point x="167.0" y="201.0" />
-              <point x="129.5" y="201.0" />
-              <point x="18.5" y="13.5" />
-            </edge>
-            <edge source="net.cloudburo.polkadot.types.primitives.AccountIndex" target="net.cloudburo.polkadot.types.primitives.U32">
-              <point x="0.0" y="-13.5" />
-              <point x="175.0" y="52.0" />
-              <point x="126.5" y="52.0" />
-              <point x="16.75" y="13.5" />
-            </edge>
-            <edge source="net.cloudburo.polkadot.types.primitives.AccountId" target="net.cloudburo.polkadot.types.primitives.H256">
-              <point x="0.0" y="-13.5" />
-              <point x="55.0" y="201.0" />
-              <point x="92.5" y="201.0" />
-              <point x="-18.5" y="13.5" />
-            </edge>
-          </edges>
-          <settings layout="Hierarchic Group" zoom="1.0" x="4.0" y="179.5" />
-          <SelectedNodes />
-          <Categories />
-          <SCOPE>All</SCOPE>
-          <VISIBILITY>private</VISIBILITY>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/net/cloudburo/polkadot/types/primitives/U32.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/net/cloudburo/polkadot/types/substrate/SubscriptionId.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="1" selection-start-column="1" selection-end-column="1" />
+        <state relative-caret-position="153">
+          <caret line="11" column="72" selection-start-line="11" selection-start-column="72" selection-end-line="11" selection-end-column="72" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/net/cloudburo/polkadot/types/substrate/VoteIndex.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="10" column="67" selection-start-line="10" selection-start-column="67" selection-end-line="10" selection-end-column="67" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/net/cloudburo/polkadot/types/substrate/ProposalIndex.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="10" column="71" selection-start-line="10" selection-start-column="71" selection-end-line="10" selection-end-column="71" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/net/cloudburo/polkadot/types/common/ScaleDecoder.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="158">
+          <caret line="60" column="50" selection-start-line="60" selection-start-column="50" selection-end-line="60" selection-end-column="50" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/net/cloudburo/polkadot/types/codec/UInt8Array.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/net/cloudburo/polkadot/types/common/ValueError.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/net/cloudburo/polkadot/types/codec/ScaleUInt.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="1" lean-forward="true" selection-start-line="1" selection-end-line="1" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/net/cloudburo/polkadot/types/common/bn/BN.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/resources/typeMapper.txt">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/net/cloudburo/polkadot/types/common/ScaleDecoderTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="272">
+          <caret line="16" lean-forward="true" selection-start-line="16" selection-end-line="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/net/cloudburo/polkadot/types/codec/CompactU32Test.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="234">
+          <caret line="17" column="32" lean-forward="true" selection-start-line="17" selection-start-column="32" selection-end-line="17" selection-end-column="32" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/net/cloudburo/polkadot/types/common/ScaleType.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="6" column="22" selection-start-line="6" selection-start-column="22" selection-end-line="6" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/net/cloudburo/polkadot/types/primitives/H512.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="188">
+          <caret line="16" column="27" lean-forward="true" selection-start-line="16" selection-start-column="27" selection-end-line="16" selection-end-column="27" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#553#554#0" expanded="true" />
+            <element signature="e#595#596#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/net/cloudburo/polkadot/types/primitives/H256.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="289">
+          <caret line="27" column="1" lean-forward="true" selection-start-line="27" selection-start-column="1" selection-end-line="27" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/net/cloudburo/polkadot/types/primitives/H160.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="17" column="27" selection-start-line="17" selection-start-column="27" selection-end-line="17" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/net/cloudburo/polkadot/types/codec/VecU32.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="169">
+          <caret line="16" column="26" selection-start-line="16" selection-start-column="26" selection-end-line="16" selection-end-column="26" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#531#532#0" expanded="true" />
+            <element signature="e#572#573#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/net/cloudburo/polkadot/types/primitives/Bytes.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="13" column="29" selection-start-line="13" selection-start-column="29" selection-end-line="13" selection-end-column="29" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#449#450#0" expanded="true" />
+            <element signature="e#492#493#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/jdk-12/lib/src.zip!/java.base/java/lang/Integer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="224">
+          <caret line="1559" column="22" selection-start-line="1559" selection-start-column="22" selection-end-line="1559" selection-end-column="22" />
+          <folding>
+            <element signature="e#13027#13028#0" expanded="true" />
+            <element signature="e#13073#13074#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/build/reports/tests/test/index.html" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/net/cloudburo/polkadot/types/common/ScaleBytes.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-79">
+          <caret line="49" column="18" selection-start-line="49" selection-start-column="18" selection-end-line="49" selection-end-column="18" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#1439#1440#0" expanded="true" />
+            <element signature="e#1487#1488#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="255">
+            <caret line="25" column="17" lean-forward="true" selection-start-line="25" selection-start-column="17" selection-end-line="25" selection-end-column="17" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/net/cloudburo/polkadot/types/codec/UIntBitLength.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="553">
+          <caret line="40" column="15" selection-start-line="40" selection-start-column="15" selection-end-line="40" selection-end-column="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/net/cloudburo/polkadot/types/common/Helper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="219">
+          <caret line="67" column="39" selection-start-line="67" selection-start-column="39" selection-end-line="67" selection-end-column="39" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/net/cloudburo/polkadot/types/common/HelperTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="14" column="10" lean-forward="true" selection-start-line="14" selection-start-column="10" selection-end-line="14" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/junit/junit/4.12/a6c32b40bf3d76eca54e3c601e5d1470c86fcdfa/junit-4.12-sources.jar!/org/junit/runners/ParentRunner.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="360">
+          <caret line="329" column="19" lean-forward="true" selection-start-line="329" selection-start-column="19" selection-end-line="329" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/junit/junit/4.12/a6c32b40bf3d76eca54e3c601e5d1470c86fcdfa/junit-4.12-sources.jar!/org/junit/internal/runners/model/ReflectiveCallable.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="12" selection-start-line="12" selection-end-line="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/net/cloudburo/polkadot/types/codec/UIntTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="289">
+          <caret line="29" column="56" lean-forward="true" selection-start-line="29" selection-start-column="56" selection-end-line="29" selection-end-column="56" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/net/cloudburo/polkadot/types/codec/CompactU32.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="122">
+          <caret line="30" column="26" selection-start-line="30" selection-start-column="26" selection-end-line="30" selection-end-column="26" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#386#387#0" expanded="true" />
+            <element signature="e#428#429#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/net/cloudburo/polkadot/types/common/SubstrateTypeException.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/net/cloudburo/polkadot/types/primitives/U256.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="11" column="3" selection-start-line="11" selection-start-column="3" selection-end-line="11" selection-end-column="3" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/net/cloudburo/polkadot/types/primitives/U128.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="259">
+          <caret line="18" selection-start-line="18" selection-end-line="18" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -1177,76 +1235,72 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/net/cloudburo/polkadot/types/primitives/U64.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="18" lean-forward="true" selection-start-line="18" selection-end-line="18" />
+        <state relative-caret-position="207">
+          <caret line="20" column="5" selection-start-line="14" selection-start-column="3" selection-end-line="20" selection-end-column="5" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/net/cloudburo/polkadot/types/substrate/ContentId.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="8" column="5" lean-forward="true" selection-start-line="6" selection-start-column="4" selection-end-line="8" selection-end-column="5" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/net/cloudburo/polkadot/types/substrate/BlockNumber.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="11" column="5" lean-forward="true" selection-start-line="9" selection-start-column="4" selection-end-line="11" selection-end-column="5" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/net/cloudburo/polkadot/types/substrate/MemberId.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="6" column="33" lean-forward="true" selection-start-line="6" selection-start-column="9" selection-end-line="6" selection-end-column="33" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#240#241#0" expanded="true" />
-            <element signature="e#267#268#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/net/cloudburo/polkadot/types/substrate/PaidTermId.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="10" selection-start-line="10" selection-end-line="12" selection-end-column="5" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#278#279#0" expanded="true" />
-            <element signature="e#305#306#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/net/cloudburo/polkadot/types/substrate/VoteIndex.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="6" column="41" lean-forward="true" selection-start-line="6" selection-start-column="3" selection-end-line="6" selection-end-column="41" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/net/cloudburo/polkadot/types/substrate/SubscriptionId.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/net/cloudburo/polkadot/types/primitives/U32.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="238">
-          <caret line="14" column="1" lean-forward="true" selection-start-line="14" selection-start-column="1" selection-end-line="14" selection-end-column="1" />
+          <caret line="17" selection-start-line="17" selection-end-line="17" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#253#254#0" expanded="true" />
-            <element signature="e#280#281#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/net/cloudburo/polkadot/types/primitives/U16.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="18" selection-start-line="18" selection-end-line="20" selection-end-column="5" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/net/cloudburo/polkadot/types/primitives/U8.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="18" column="40" selection-start-line="18" selection-start-column="40" selection-end-line="18" selection-end-column="40" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/net/cloudburo/polkadot/types/codec/Compact.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="366">
+          <caret line="32" column="33" selection-start-line="32" selection-start-column="30" selection-end-line="32" selection-end-column="47" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/net/cloudburo/polkadot/types/codec/AbstractInt.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="357">
+          <caret line="40" lean-forward="true" selection-start-line="40" selection-end-line="40" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#588#589#0" expanded="true" />
+            <element signature="e#658#659#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/net/cloudburo/polkadot/types/codec/UInt.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="156">
+          <caret line="32" column="5" selection-start-line="32" selection-start-column="5" selection-end-line="32" selection-end-column="5" />
+          <folding>
+            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1301,10 +1355,12 @@
       </state>
       <state key="ModuleStructureConfigurable.UI">
         <settings>
+          <last-edited>test|scale-codec</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>
                 <option value="0.2" />
+                <option value="0.6" />
               </list>
             </option>
           </splitter-proportions>

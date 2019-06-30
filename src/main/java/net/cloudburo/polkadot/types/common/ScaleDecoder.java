@@ -1,4 +1,4 @@
-package net.cloudburo.polkadot.types.base;
+package net.cloudburo.polkadot.types.common;
 
 import net.cloudburo.polkadot.types.TypeFactory;
 import org.apache.commons.codec.binary.Hex;
@@ -13,20 +13,20 @@ public abstract class ScaleDecoder {
 
     protected String subType;
     protected ScaleBytes data;
-    protected String rawValue;
+    protected String hexValue;
     protected Object value;
 
 
     public ScaleDecoder(ScaleBytes data, String subType) {
         this.subType = subType;
         this.data = data;
-        this.rawValue = "";
+        this.hexValue = "";
         this.value = null;
     }
 
     public ScaleDecoder(ScaleBytes data) {
         this.data = data;
-        this.rawValue = "";
+        this.hexValue = "";
         this.value = null;
     }
 
@@ -41,8 +41,8 @@ public abstract class ScaleDecoder {
         return data;
     }
 
-    public String getRawValue() {
-        return rawValue;
+    public String getHexValue() {
+        return hexValue;
     }
 
     public Object getValue() {
@@ -57,6 +57,14 @@ public abstract class ScaleDecoder {
         return obj;
     }
 
+    /**
+     * Decode the scale endoded data (Scale Bytes)
+     * @param checkRemaining
+     * @return
+     * @throws RemainingScaleBytesNotEmptyException
+     * @throws InvalidScaleTypeValueException
+     * @throws IOException
+     */
     public Object decode(boolean checkRemaining) throws RemainingScaleBytesNotEmptyException, InvalidScaleTypeValueException, IOException {
         this.value = process();
         if (checkRemaining && this.data.getOffset() != this.data.getLength()) {
@@ -73,13 +81,13 @@ public abstract class ScaleDecoder {
      */
     public byte[] getNextBytes(int numberOfBytes) {
         byte[] data = this.data.getNextBytes(numberOfBytes);
-        this.rawValue += Hex.encodeHexString(data);
+        this.hexValue += Hex.encodeHexString(data);
         return data;
     }
 
     public byte[] getRemainingBytes() {
         byte[] data = this.data.getRemainingBytes();
-        this.rawValue += Hex.encodeHexString(data);
+        this.hexValue += Hex.encodeHexString(data);
         return data;
     }
 

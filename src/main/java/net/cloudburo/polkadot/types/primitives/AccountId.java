@@ -1,6 +1,6 @@
 package net.cloudburo.polkadot.types.primitives;
 
-import net.cloudburo.polkadot.types.base.ScaleBytes;
+import net.cloudburo.polkadot.types.common.ScaleBytes;
 
 /**
  * A wrapper around an AccountId/PublicKey representation

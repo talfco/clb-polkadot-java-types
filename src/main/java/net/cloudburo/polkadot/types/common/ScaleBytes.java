@@ -1,4 +1,4 @@
-package net.cloudburo.polkadot.types.base;
+package net.cloudburo.polkadot.types.common;
 
 import org.apache.commons.codec.DecoderException;
 import org.apache.commons.codec.binary.Hex;
@@ -45,6 +45,10 @@ public class ScaleBytes {
      */
     public byte[] getData() {
         return data;
+    }
+
+    public String getDataAsHex() {
+        return Hex.encodeHexString(data);
     }
 
     /**

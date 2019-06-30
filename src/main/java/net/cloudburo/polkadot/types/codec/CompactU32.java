@@ -1,11 +1,12 @@
 package net.cloudburo.polkadot.types.codec;
 
-import net.cloudburo.polkadot.types.base.Helper;
-import net.cloudburo.polkadot.types.base.ScaleBytes;
+import net.cloudburo.polkadot.types.common.Helper;
+import net.cloudburo.polkadot.types.common.ScaleBytes;
 
 import java.io.IOException;
 import java.math.BigInteger;
 
+/** The class works for unsigned numbers up to 4 bytes, which represents the data type int */
 public class CompactU32 extends Compact {
 
     public CompactU32(ScaleBytes data) {

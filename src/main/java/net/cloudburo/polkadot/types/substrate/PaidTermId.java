@@ -1,6 +1,7 @@
 package net.cloudburo.polkadot.types.substrate;
 
-import net.cloudburo.polkadot.types.base.ScaleBytes;
+import net.cloudburo.polkadot.types.common.SubstrateTypeException;
+import net.cloudburo.polkadot.types.common.ScaleBytes;
 import net.cloudburo.polkadot.types.primitives.U64;
 
 /**
@@ -8,7 +9,7 @@ import net.cloudburo.polkadot.types.primitives.U64;
  **/
 public class PaidTermId extends U64 {
 
-    public PaidTermId(ScaleBytes data) {
+    public PaidTermId(ScaleBytes data) throws SubstrateTypeException {
         super(data);
     }
 }

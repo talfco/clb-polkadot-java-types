@@ -1,6 +1,6 @@
 package net.cloudburo.polkadot.types.primitives;
 
-import net.cloudburo.polkadot.types.base.ScaleBytes;
+import net.cloudburo.polkadot.types.common.ScaleBytes;
 
 /**
  * 	The default hash that is used accross the system. It is just a thin wrapper around [[H256]]

@@ -1,23 +1,30 @@
 package net.cloudburo.polkadot.types.primitives;
 
-import net.cloudburo.polkadot.types.base.Helper;
-import net.cloudburo.polkadot.types.base.InvalidScaleTypeValueException;
-import net.cloudburo.polkadot.types.base.ScaleBytes;
-import net.cloudburo.polkadot.types.base.ScaleType;
+import net.cloudburo.polkadot.types.common.SubstrateTypeException;
+import net.cloudburo.polkadot.types.common.ScaleBytes;
+import net.cloudburo.polkadot.types.codec.UInt;
+import net.cloudburo.polkadot.types.codec.UIntBitLength;
 
-public class U64 extends ScaleType {
+import java.math.BigInteger;
 
-    public U64(ScaleBytes data ) {
-        super(data,null);
-        // TODO metaData
+/**
+ * A 64 bit unsigned integer
+ */
+public class U64 extends UInt {
+
+    public U64(BigInteger bn) throws SubstrateTypeException {
+        super(bn,new UIntBitLength(UIntBitLength.UINT_BIT_LENGTH.L64));
     }
 
-    public U64(ScaleBytes data, String subType ) {
-        super(data,subType,null);
-        // TODO metaData
+    public U64(long bn) throws SubstrateTypeException {
+        super(BigInteger.valueOf(bn),new UIntBitLength(UIntBitLength.UINT_BIT_LENGTH.L64));
     }
 
-    public  Object  process() throws InvalidScaleTypeValueException {
-        return Integer.valueOf(Helper.byteArrayToLeInt(this.getNextBytes(8)));
+    public U64(ScaleBytes data ) throws SubstrateTypeException {
+        super(data,new UIntBitLength(UIntBitLength.UINT_BIT_LENGTH.L64));
+    }
+
+    public U64(ScaleBytes data, String subType ) throws SubstrateTypeException {
+        super(data,subType,new UIntBitLength(UIntBitLength.UINT_BIT_LENGTH.L64));
     }
 }

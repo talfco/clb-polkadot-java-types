@@ -4,10 +4,10 @@ import java.io.IOException;
 import java.net.URISyntaxException;
 import java.util.Map;
 
-import net.cloudburo.polkadot.types.base.Helper;
-import net.cloudburo.polkadot.types.base.ScaleBytes;
-import net.cloudburo.polkadot.types.base.ScaleDecoder;
-import net.cloudburo.polkadot.types.base.ScaleType;
+import net.cloudburo.polkadot.types.common.Helper;
+import net.cloudburo.polkadot.types.common.ScaleBytes;
+import net.cloudburo.polkadot.types.common.ScaleDecoder;
+import net.cloudburo.polkadot.types.common.ScaleType;
 import net.cloudburo.polkadot.types.codec.CompactU32;
 import net.cloudburo.polkadot.types.codec.VecU32;
 import net.cloudburo.polkadot.types.primitives.AccountId;

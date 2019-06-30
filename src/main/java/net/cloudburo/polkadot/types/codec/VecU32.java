@@ -1,9 +1,9 @@
 package net.cloudburo.polkadot.types.codec;
 
-import net.cloudburo.polkadot.types.base.RemainingScaleBytesNotEmptyException;
-import net.cloudburo.polkadot.types.base.ScaleBytes;
-import net.cloudburo.polkadot.types.base.ScaleType;
-import net.cloudburo.polkadot.types.base.InvalidScaleTypeValueException;
+import net.cloudburo.polkadot.types.common.RemainingScaleBytesNotEmptyException;
+import net.cloudburo.polkadot.types.common.ScaleBytes;
+import net.cloudburo.polkadot.types.common.ScaleType;
+import net.cloudburo.polkadot.types.common.InvalidScaleTypeValueException;
 
 import java.io.IOException;
 import java.math.BigInteger;
@@ -14,7 +14,7 @@ public class VecU32 extends ScaleType {
     private Vector elements = new Vector();
 
     public VecU32(ScaleBytes data, String subType) {
-        super(data,subType, null);
+        super(data,subType);
     }
 
     public Object process() throws IOException, InvalidScaleTypeValueException, RemainingScaleBytesNotEmptyException {

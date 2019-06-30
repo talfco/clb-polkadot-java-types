@@ -1,4 +1,4 @@
-package net.cloudburo.polkadot.types.base;
+package net.cloudburo.polkadot.types.common;
 
 public class InvalidScaleTypeValueException extends Exception {
     public InvalidScaleTypeValueException(String msg) {
