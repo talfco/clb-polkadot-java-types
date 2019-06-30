@@ -6,9 +6,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="95193441-4bde-40ef-b2dd-98a027544924" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/test/java/net/cloudburo/substrate/types/primitives/U64Test.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/net/cloudburo/substrate/types/codec/AbstractInt.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/net/cloudburo/substrate/types/codec/AbstractInt.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/net/cloudburo/substrate/types/codec/UInt.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/net/cloudburo/substrate/types/codec/UInt.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/net/cloudburo/substrate/types/common/Helper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/net/cloudburo/substrate/types/common/Helper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/net/cloudburo/substrate/types/common/SubstrateTypeException.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/net/cloudburo/substrate/types/common/SubstrateTypeException.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/net/cloudburo/substrate/types/common/HelperTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/net/cloudburo/substrate/types/common/HelperTest.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/.gradle/" />
@@ -57,8 +60,71 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/net/cloudburo/substrate/types/codec/UInt.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="505">
-              <caret line="63" column="53" selection-start-line="63" selection-start-column="37" selection-end-line="63" selection-end-column="66" />
+            <state relative-caret-position="257">
+              <caret line="63" selection-start-line="63" selection-end-line="63" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/net/cloudburo/substrate/types/common/Helper.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="272">
+              <caret line="126" column="22" lean-forward="true" selection-start-line="121" selection-start-column="8" selection-end-line="126" selection-end-column="22" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/test/java/net/cloudburo/substrate/types/primitives/U128Test.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="215">
+              <caret line="46" column="23" selection-start-line="46" selection-start-column="23" selection-end-line="46" selection-end-column="23" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/commons-codec/commons-codec/1.12/bf72d17429b490b08c63d8f06a3cb7b2b52a7250/commons-codec-1.12-sources.jar!/org/apache/commons/codec/binary/Hex.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="144">
+              <caret line="78" column="25" selection-start-line="78" selection-start-column="25" selection-end-line="78" selection-end-column="25" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/junit/junit/4.12/a6c32b40bf3d76eca54e3c601e5d1470c86fcdfa/junit-4.12-sources.jar!/org/junit/internal/runners/model/ReflectiveCallable.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="204">
+              <caret line="12" selection-start-line="12" selection-end-line="12" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/junit/junit/4.12/a6c32b40bf3d76eca54e3c601e5d1470c86fcdfa/junit-4.12-sources.jar!/org/junit/runners/ParentRunner.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="85">
+              <caret line="327" selection-start-line="327" selection-end-line="327" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/net/cloudburo/substrate/types/codec/AbstractInt.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="144">
+              <caret line="47" column="45" selection-start-line="47" selection-start-column="45" selection-end-line="47" selection-end-column="45" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -79,82 +145,10 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/junit/junit/4.12/a6c32b40bf3d76eca54e3c601e5d1470c86fcdfa/junit-4.12-sources.jar!/org/junit/runners/model/FrameworkMethod.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="144">
-              <caret line="49" selection-start-line="49" selection-end-line="49" />
-              <folding>
-                <element signature="e#1657#1658#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/net/cloudburo/substrate/types/common/Helper.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="204">
-              <caret line="88" column="24" lean-forward="true" selection-start-line="88" selection-start-column="24" selection-end-line="88" selection-end-column="24" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/net/cloudburo/substrate/types/primitives/U64.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="105">
-              <caret line="14" column="19" lean-forward="true" selection-start-line="14" selection-start-column="19" selection-end-line="14" selection-end-column="19" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/test/java/net/cloudburo/substrate/types/primitives/U64Test.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="289">
-              <caret line="41" column="35" selection-start-line="41" selection-start-column="25" selection-end-line="41" selection-end-column="35" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/junit/junit/4.12/a6c32b40bf3d76eca54e3c601e5d1470c86fcdfa/junit-4.12-sources.jar!/org/junit/internal/runners/model/ReflectiveCallable.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="204">
-              <caret line="12" selection-start-line="12" selection-end-line="12" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="jar://C:/Program Files/jdk-12/lib/src.zip!/java.base/java/lang/Integer.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-961">
-              <caret line="1123" column="7" lean-forward="true" selection-start-line="1123" selection-start-column="7" selection-end-line="1123" selection-end-column="7" />
-              <folding>
-                <element signature="e#13027#13028#0" expanded="true" />
-                <element signature="e#13073#13074#0" expanded="true" />
-                <element signature="e#45253#45254#0" expanded="true" />
-                <element signature="e#45287#45288#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/net/cloudburo/substrate/types/common/ByteSwapper.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="127">
-              <caret line="55" column="22" selection-start-line="55" selection-start-column="22" selection-end-line="55" selection-end-column="22" />
+            <state relative-caret-position="289">
+              <caret line="83" selection-start-line="83" selection-end-line="83" />
             </state>
           </provider>
         </entry>
@@ -184,9 +178,11 @@
       <find>getIN</find>
       <find>byte</find>
       <find>U32</find>
+      <find>U64</find>
     </findStrings>
     <replaceStrings>
       <replace>U64</replace>
+      <replace>U128</replace>
     </replaceStrings>
   </component>
   <component name="Git.Settings">
@@ -195,7 +191,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/test/java/net/cloudburo/polkadot/types/primitives/BoolTest.java" />
         <option value="$PROJECT_DIR$/src/main/java/net/cloudburo/polkadot/types/base/PolkadotTypeException.java" />
         <option value="$PROJECT_DIR$/src/main/java/net/cloudburo/polkadot/types/primitives/AccountIndex.java" />
         <option value="$PROJECT_DIR$/src/main/java/net/cloudburo/polkadot/types/primitives/Moment.java" />
@@ -237,23 +232,24 @@
         <option value="$PROJECT_DIR$/src/main/java/net/cloudburo/substrate/types/codec/ScaleUInt.java" />
         <option value="$PROJECT_DIR$/src/main/java/net/cloudburo/substrate/types/common/ByteSwap.java" />
         <option value="$PROJECT_DIR$/src/main/java/net/cloudburo/substrate/types/common/ByteSwapper.java" />
-        <option value="$PROJECT_DIR$/src/main/java/net/cloudburo/substrate/types/codec/UInt.java" />
-        <option value="$PROJECT_DIR$/src/test/java/net/cloudburo/substrate/types/common/HelperTest.java" />
-        <option value="$PROJECT_DIR$/src/main/java/net/cloudburo/substrate/types/common/SubstrateTypeException.java" />
         <option value="$PROJECT_DIR$/src/main/java/net/cloudburo/substrate/types/codec/AbstractInt.java" />
         <option value="$PROJECT_DIR$/src/test/java/net/cloudburo/substrate/types/primitives/U16Test.java" />
         <option value="$PROJECT_DIR$/src/test/java/net/cloudburo/substrate/types/primitives/U8Test.java" />
         <option value="$PROJECT_DIR$/src/test/java/net/cloudburo/substrate/types/primitives/U32Test.java" />
-        <option value="$PROJECT_DIR$/src/main/java/net/cloudburo/substrate/types/common/Helper.java" />
         <option value="$PROJECT_DIR$/src/test/java/net/cloudburo/substrate/types/primitives/U64Test.java" />
+        <option value="$PROJECT_DIR$/src/main/java/net/cloudburo/substrate/types/common/SubstrateTypeException.java" />
+        <option value="$PROJECT_DIR$/src/main/java/net/cloudburo/substrate/types/codec/UInt.java" />
+        <option value="$PROJECT_DIR$/src/test/java/net/cloudburo/substrate/types/common/HelperTest.java" />
+        <option value="$PROJECT_DIR$/src/test/java/net/cloudburo/substrate/types/primitives/U128Test.java" />
+        <option value="$PROJECT_DIR$/src/main/java/net/cloudburo/substrate/types/common/Helper.java" />
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="445" />
-    <option name="y" value="22" />
-    <option name="width" value="868" />
-    <option name="height" value="1039" />
+  <component name="ProjectFrameBounds">
+    <option name="x" value="17" />
+    <option name="y" value="2" />
+    <option name="width" value="1873" />
+    <option name="height" value="960" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -267,6 +263,11 @@
             <path>
               <item name="scale-codec" type="b2602c69:ProjectViewProjectNode" />
               <item name="scale-codec" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+            </path>
+            <path>
+              <item name="scale-codec" type="b2602c69:ProjectViewProjectNode" />
+              <item name="scale-codec" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name=".gradle" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="scale-codec" type="b2602c69:ProjectViewProjectNode" />
@@ -352,26 +353,6 @@
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="cloudburo" type="462c0819:PsiDirectoryNode" />
               <item name="types" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="scale-codec" type="b2602c69:ProjectViewProjectNode" />
-              <item name="scale-codec" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="cloudburo" type="462c0819:PsiDirectoryNode" />
-              <item name="types" type="462c0819:PsiDirectoryNode" />
-              <item name="codec" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="scale-codec" type="b2602c69:ProjectViewProjectNode" />
-              <item name="scale-codec" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="cloudburo" type="462c0819:PsiDirectoryNode" />
-              <item name="types" type="462c0819:PsiDirectoryNode" />
-              <item name="common" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="scale-codec" type="b2602c69:ProjectViewProjectNode" />
@@ -443,7 +424,27 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Gradle.U64Test.constructorTest">
+  <component name="RunManager" selected="Gradle.U128Test.constructorTest">
+    <configuration name="U128Test.constructorTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="--tests &quot;net.cloudburo.substrate.types.primitives.U128Test.constructorTest&quot;" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":cleanTest" />
+            <option value=":test" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <GradleScriptDebugEnabled>false</GradleScriptDebugEnabled>
+      <method v="2" />
+    </configuration>
     <configuration name="U16Test.constructorTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
@@ -524,33 +525,13 @@
       <GradleScriptDebugEnabled>false</GradleScriptDebugEnabled>
       <method v="2" />
     </configuration>
-    <configuration name="UIntTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
-      <ExternalSystemSettings>
-        <option name="executionName" />
-        <option name="externalProjectPath" value="$PROJECT_DIR$" />
-        <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" value="--tests &quot;net.cloudburo.substrate.types.codec.UIntTest&quot;" />
-        <option name="taskDescriptions">
-          <list />
-        </option>
-        <option name="taskNames">
-          <list>
-            <option value=":cleanTest" />
-            <option value=":test" />
-          </list>
-        </option>
-        <option name="vmOptions" />
-      </ExternalSystemSettings>
-      <GradleScriptDebugEnabled>false</GradleScriptDebugEnabled>
-      <method v="2" />
-    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Gradle.U128Test.constructorTest" />
         <item itemvalue="Gradle.U64Test.constructorTest" />
         <item itemvalue="Gradle.U32Test.constructorTest" />
         <item itemvalue="Gradle.U8Test.constructorTest" />
         <item itemvalue="Gradle.U16Test.constructorTest" />
-        <item itemvalue="Gradle.UIntTest" />
       </list>
     </recent_temporary>
   </component>
@@ -574,7 +555,7 @@
       <workItem from="1561493163854" duration="8141000" />
       <workItem from="1561526705723" duration="12416000" />
       <workItem from="1561569013239" duration="54297000" />
-      <workItem from="1561847888139" duration="27843000" />
+      <workItem from="1561847888139" duration="35431000" />
     </task>
     <task id="LOCAL-00001" summary="Initial commit">
       <created>1559213709047</created>
@@ -632,51 +613,57 @@
       <option name="project" value="LOCAL" />
       <updated>1561902283156</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="Testing complete U64">
+      <created>1561906327188</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1561906327188</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="U32Test_constructorTest - 2019.06.30 at 15h 43m 25s.xml">
-      <configuration name="U32Test.constructorTest" configurationId="GradleRunConfiguration" />
+    <history-entry file="U128Test_constructorTest - 2019.06.30 at 23h 31m 47s.xml">
+      <configuration name="U128Test.constructorTest" configurationId="GradleRunConfiguration" />
     </history-entry>
-    <history-entry file="U32Test_constructorTest - 2019.06.30 at 16h 15m 23s.xml">
-      <configuration name="U32Test.constructorTest" configurationId="GradleRunConfiguration" />
+    <history-entry file="U128Test_constructorTest - 2019.06.30 at 23h 32m 16s.xml">
+      <configuration name="U128Test.constructorTest" configurationId="GradleRunConfiguration" />
     </history-entry>
-    <history-entry file="U64Test_constructorTest - 2019.06.30 at 16h 19m 22s.xml">
-      <configuration name="U64Test.constructorTest" configurationId="GradleRunConfiguration" />
+    <history-entry file="U128Test_constructorTest - 2019.06.30 at 23h 36m 13s.xml">
+      <configuration name="U128Test.constructorTest" configurationId="GradleRunConfiguration" />
     </history-entry>
-    <history-entry file="U64Test_constructorTest - 2019.06.30 at 16h 20m 55s.xml">
-      <configuration name="U64Test.constructorTest" configurationId="GradleRunConfiguration" />
+    <history-entry file="U128Test_constructorTest - 2019.06.30 at 23h 36m 31s.xml">
+      <configuration name="U128Test.constructorTest" configurationId="GradleRunConfiguration" />
     </history-entry>
-    <history-entry file="U64Test_constructorTest - 2019.06.30 at 16h 21m 36s.xml">
-      <configuration name="U64Test.constructorTest" configurationId="GradleRunConfiguration" />
+    <history-entry file="U128Test_constructorTest - 2019.06.30 at 23h 42m 22s.xml">
+      <configuration name="U128Test.constructorTest" configurationId="GradleRunConfiguration" />
     </history-entry>
-    <history-entry file="U64Test_constructorTest - 2019.06.30 at 16h 22m 40s.xml">
-      <configuration name="U64Test.constructorTest" configurationId="GradleRunConfiguration" />
+    <history-entry file="U128Test_constructorTest - 2019.06.30 at 23h 43m 54s.xml">
+      <configuration name="U128Test.constructorTest" configurationId="GradleRunConfiguration" />
     </history-entry>
-    <history-entry file="U64Test_constructorTest - 2019.06.30 at 16h 23m 04s.xml">
-      <configuration name="U64Test.constructorTest" configurationId="GradleRunConfiguration" />
+    <history-entry file="U128Test_constructorTest - 2019.06.30 at 23h 45m 29s.xml">
+      <configuration name="U128Test.constructorTest" configurationId="GradleRunConfiguration" />
     </history-entry>
-    <history-entry file="U64Test_constructorTest - 2019.06.30 at 16h 23m 54s.xml">
-      <configuration name="U64Test.constructorTest" configurationId="GradleRunConfiguration" />
+    <history-entry file="U128Test_constructorTest - 2019.06.30 at 23h 52m 23s.xml">
+      <configuration name="U128Test.constructorTest" configurationId="GradleRunConfiguration" />
     </history-entry>
-    <history-entry file="U64Test_constructorTest - 2019.06.30 at 16h 24m 17s.xml">
-      <configuration name="U64Test.constructorTest" configurationId="GradleRunConfiguration" />
+    <history-entry file="U128Test_constructorTest - 2019.06.30 at 23h 54m 02s.xml">
+      <configuration name="U128Test.constructorTest" configurationId="GradleRunConfiguration" />
     </history-entry>
-    <history-entry file="U64Test_constructorTest - 2019.06.30 at 16h 24m 52s.xml">
-      <configuration name="U64Test.constructorTest" configurationId="GradleRunConfiguration" />
+    <history-entry file="U128Test_constructorTest - 2019.06.30 at 23h 55m 11s.xml">
+      <configuration name="U128Test.constructorTest" configurationId="GradleRunConfiguration" />
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="192972000" />
+    <option name="totallyTimeSpent" value="200560000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
-    <editor active="true" />
+    <frame x="14" y="2" width="1498" height="768" extended-state="0" />
     <layout>
       <window_info id="Favorites" order="0" sideWeight="0.5021834" side_tool="true" weight="0.34697986" />
       <window_info id="Designer" order="1" />
-      <window_info active="true" content_ui="combo" id="Project" order="2" sideWeight="0.4978166" visible="true" weight="0.34697986" />
+      <window_info active="true" content_ui="combo" id="Project" order="2" sideWeight="0.4978166" visible="true" weight="0.3595271" />
       <window_info id="Structure" order="3" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="Messages" order="0" sideWeight="0.49924925" weight="0.3298193" />
       <window_info anchor="bottom" id="Version Control" order="1" sideWeight="0.49924925" weight="0.19688386" />
@@ -688,7 +675,7 @@
       <window_info anchor="bottom" id="Message" order="7" />
       <window_info anchor="bottom" id="Find" order="8" sideWeight="0.49884704" weight="0.34844193" />
       <window_info anchor="bottom" id="Run" order="9" sideWeight="0.64642584" weight="0.45609066" />
-      <window_info anchor="bottom" id="Debug" order="10" sideWeight="0.820907" visible="true" weight="0.3512748" />
+      <window_info anchor="bottom" id="Debug" order="10" sideWeight="0.820907" visible="true" weight="0.3899371" />
       <window_info anchor="bottom" id="Cvs" order="11" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="12" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="13" />
@@ -697,7 +684,7 @@
       <window_info anchor="right" id="Mongo Explorer" order="2" />
       <window_info anchor="right" id="Palette&#9;" order="3" />
       <window_info anchor="right" id="Maven" order="4" />
-      <window_info anchor="right" id="SciView" order="5" />
+      <window_info anchor="right" id="SciView" order="5" visible="true" weight="0.048678722" />
       <window_info anchor="right" id="Database" order="6" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="7" type="SLIDING" weight="0.4" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="8" weight="0.25" />
@@ -746,7 +733,8 @@
     <MESSAGE value="Added Types" />
     <MESSAGE value="Merge branch 'master' of https://github.com/talfco/clb-polkadot-java-types&#10;&#10;# Conflicts:&#10;#&#9;README.md" />
     <MESSAGE value="Testing complete U8 / U16 / U32" />
-    <option name="LAST_COMMIT_MESSAGE" value="Testing complete U8 / U16 / U32" />
+    <MESSAGE value="Testing complete U64" />
+    <option name="LAST_COMMIT_MESSAGE" value="Testing complete U64" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -795,19 +783,19 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/net/cloudburo/substrate/types/common/Helper.java</url>
-          <line>67</line>
+          <line>70</line>
           <properties />
           <option name="timeStamp" value="99" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/net/cloudburo/substrate/types/common/Helper.java</url>
-          <line>59</line>
+          <line>61</line>
           <properties />
           <option name="timeStamp" value="103" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/net/cloudburo/substrate/types/common/Helper.java</url>
-          <line>51</line>
+          <line>53</line>
           <properties />
           <option name="timeStamp" value="108" />
         </line-breakpoint>
@@ -816,6 +804,24 @@
           <line>11</line>
           <properties />
           <option name="timeStamp" value="115" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/net/cloudburo/substrate/types/primitives/U64Test.java</url>
+          <line>41</line>
+          <properties />
+          <option name="timeStamp" value="125" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/net/cloudburo/substrate/types/primitives/U64Test.java</url>
+          <line>22</line>
+          <properties />
+          <option name="timeStamp" value="132" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/net/cloudburo/substrate/types/primitives/U128Test.java</url>
+          <line>27</line>
+          <properties />
+          <option name="timeStamp" value="133" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-method">
           <url>file://$PROJECT_DIR$/src/main/java/net/cloudburo/substrate/types/codec/Compact.java</url>
@@ -838,7 +844,32 @@
   <component name="debuggerHistoryManager">
     <expressions id="evaluateExpression">
       <expression>
+        <expression-string>originalHex</expression-string>
+        <language-id>JAVA</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>(bigI.toString(16)</expression-string>
+        <language-id>JAVA</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
         <expression-string>ui.toU8Array().getDataAsHex()</expression-string>
+        <language-id>JAVA</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>revHex</expression-string>
+        <language-id>JAVA</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>revHex.getBytes()</expression-string>
+        <language-id>JAVA</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>bigI.toString(16)</expression-string>
         <language-id>JAVA</language-id>
         <evaluation-mode>EXPRESSION</evaluation-mode>
       </expression>
@@ -857,52 +888,9 @@
         <language-id>JAVA</language-id>
         <evaluation-mode>EXPRESSION</evaluation-mode>
       </expression>
-      <expression>
-        <expression-string>i.toU8().getDataAsHex()</expression-string>
-        <language-id>JAVA</language-id>
-        <evaluation-mode>EXPRESSION</evaluation-mode>
-      </expression>
-      <expression>
-        <expression-string>ex.getMessage()</expression-string>
-        <language-id>JAVA</language-id>
-        <evaluation-mode>EXPRESSION</evaluation-mode>
-      </expression>
-      <expression>
-        <expression-string>bi.toByteArray().length</expression-string>
-        <language-id>JAVA</language-id>
-        <evaluation-mode>EXPRESSION</evaluation-mode>
-      </expression>
-      <expression>
-        <expression-string>bi.bitLength()</expression-string>
-        <language-id>JAVA</language-id>
-        <evaluation-mode>EXPRESSION</evaluation-mode>
-      </expression>
-      <expression>
-        <expression-string>bi.bitCount()</expression-string>
-        <language-id>JAVA</language-id>
-        <evaluation-mode>EXPRESSION</evaluation-mode>
-      </expression>
     </expressions>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/java/net/cloudburo/substrate/types/substrate/ReferendumIndex.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="11" column="73" selection-start-line="11" selection-start-column="73" selection-end-line="11" selection-end-column="73" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/net/cloudburo/substrate/types/substrate/SessionKey.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="9" column="38" lean-forward="true" selection-start-line="9" selection-start-column="38" selection-end-line="9" selection-end-column="38" />
-          <folding>
-            <element signature="e#338#339#0" expanded="true" />
-            <element signature="e#365#366#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/net/cloudburo/substrate/types/substrate/SubscriptionId.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="153">
@@ -1061,16 +1049,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/net/cloudburo/substrate/types/primitives/U128.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="18" selection-start-line="18" selection-end-line="18" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/net/cloudburo/substrate/types/primitives/U256.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="136">
@@ -1108,37 +1086,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="jar://C:/Program Files/jdk-12/lib/src.zip!/java.base/java/nio/ByteBuffer.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="126">
-          <caret line="1997" column="29" selection-start-line="1997" selection-start-column="24" selection-end-line="1997" selection-end-column="29" />
-          <folding>
-            <element signature="e#26693#26694#0" expanded="true" />
-            <element signature="e#26739#26740#0" expanded="true" />
-            <element signature="e#38479#38480#0" expanded="true" />
-            <element signature="e#38560#38561#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://C:/Program Files/jdk-12/lib/src.zip!/java.base/java/nio/Buffer.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="144">
           <caret line="448" column="18" selection-start-line="448" selection-start-column="18" selection-end-line="448" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/net/cloudburo/substrate/types/common/HelperTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="291">
-          <caret line="24" column="5" lean-forward="true" selection-start-line="24" selection-start-column="5" selection-end-line="24" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/junit/junit/4.12/a6c32b40bf3d76eca54e3c601e5d1470c86fcdfa/junit-4.12-sources.jar!/org/junit/runners/ParentRunner.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="326">
-          <caret line="327" selection-start-line="327" selection-end-line="327" />
         </state>
       </provider>
     </entry>
@@ -1163,24 +1114,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/net/cloudburo/substrate/types/common/SubstrateTypeException.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="125">
-          <caret line="8" column="8" selection-start-line="8" selection-start-column="8" selection-end-line="8" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/net/cloudburo/substrate/types/common/ScaleBytes.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="50" selection-start-line="50" selection-end-line="50" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#1488#1489#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/net/cloudburo/substrate/types/primitives/U32.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="221">
@@ -1201,13 +1134,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/net/cloudburo/substrate/types/common/ByteSwapper.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="127">
-          <caret line="55" column="22" selection-start-line="55" selection-start-column="22" selection-end-line="55" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://C:/Program Files/jdk-12/lib/src.zip!/java.base/java/lang/Integer.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-961">
@@ -1221,42 +1147,12 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/net/cloudburo/substrate/types/codec/AbstractInt.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="63" column="40" selection-start-line="63" selection-start-column="40" selection-end-line="63" selection-end-column="40" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/net/cloudburo/substrate/types/codec/UInt.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="505">
-          <caret line="63" column="53" selection-start-line="63" selection-start-column="37" selection-end-line="63" selection-end-column="66" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/net/cloudburo/substrate/types/primitives/U16.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="170">
           <caret line="19" selection-start-line="19" selection-end-line="19" />
           <folding>
             <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/junit/junit/4.12/a6c32b40bf3d76eca54e3c601e5d1470c86fcdfa/junit-4.12-sources.jar!/org/junit/runners/model/FrameworkMethod.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="144">
-          <caret line="49" selection-start-line="49" selection-end-line="49" />
-          <folding>
-            <element signature="e#1657#1658#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1281,12 +1177,12 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/net/cloudburo/substrate/types/common/Helper.java">
+    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/junit/junit/4.12/a6c32b40bf3d76eca54e3c601e5d1470c86fcdfa/junit-4.12-sources.jar!/org/junit/runners/model/FrameworkMethod.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="88" column="24" lean-forward="true" selection-start-line="88" selection-start-column="24" selection-end-line="88" selection-end-column="24" />
+        <state relative-caret-position="144">
+          <caret line="49" selection-start-line="49" selection-end-line="49" />
           <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="e#1657#1658#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1295,6 +1191,106 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="105">
           <caret line="14" column="19" lean-forward="true" selection-start-line="14" selection-start-column="19" selection-end-line="14" selection-end-column="19" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/net/cloudburo/substrate/types/primitives/U128.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="257">
+          <caret line="25" column="5" lean-forward="true" selection-start-line="25" selection-start-column="5" selection-end-line="25" selection-end-column="5" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/net/cloudburo/substrate/types/common/HelperTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="27">
+          <caret line="9" column="9" lean-forward="true" selection-start-line="9" selection-start-column="9" selection-end-line="9" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/net/cloudburo/substrate/types/common/SubstrateTypeException.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="159">
+          <caret line="10" column="28" selection-start-line="10" selection-start-column="28" selection-end-line="10" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/net/cloudburo/substrate/types/common/ScaleBytes.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="323">
+          <caret line="24" selection-start-line="24" selection-end-line="24" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#1440#1441#0" expanded="true" />
+            <element signature="e#1488#1489#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/net/cloudburo/substrate/types/common/ByteSwapper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="289">
+          <caret line="83" selection-start-line="83" selection-end-line="83" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/jdk-12/lib/src.zip!/java.base/java/nio/ByteBuffer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="144">
+          <caret line="2119" column="31" selection-start-line="2119" selection-start-column="31" selection-end-line="2119" selection-end-column="31" />
+          <folding>
+            <element signature="e#26693#26694#0" expanded="true" />
+            <element signature="e#26739#26740#0" expanded="true" />
+            <element signature="e#38479#38480#0" expanded="true" />
+            <element signature="e#38560#38561#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/junit/junit/4.12/a6c32b40bf3d76eca54e3c601e5d1470c86fcdfa/junit-4.12-sources.jar!/org/junit/runners/ParentRunner.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="327" selection-start-line="327" selection-end-line="327" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/junit/junit/4.12/a6c32b40bf3d76eca54e3c601e5d1470c86fcdfa/junit-4.12-sources.jar!/org/junit/internal/runners/model/ReflectiveCallable.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="12" selection-start-line="12" selection-end-line="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/net/cloudburo/substrate/types/codec/AbstractInt.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="144">
+          <caret line="47" column="45" selection-start-line="47" selection-start-column="45" selection-end-line="47" selection-end-column="45" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/net/cloudburo/substrate/types/codec/UInt.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="257">
+          <caret line="63" selection-start-line="63" selection-end-line="63" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/net/cloudburo/substrate/types/primitives/U64Test.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="155">
+          <caret line="22" selection-start-line="22" selection-end-line="22" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -1311,17 +1307,27 @@
         </state>
       </provider>
     </entry>
-    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/junit/junit/4.12/a6c32b40bf3d76eca54e3c601e5d1470c86fcdfa/junit-4.12-sources.jar!/org/junit/internal/runners/model/ReflectiveCallable.java">
+    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/commons-codec/commons-codec/1.12/bf72d17429b490b08c63d8f06a3cb7b2b52a7250/commons-codec-1.12-sources.jar!/org/apache/commons/codec/binary/Hex.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="12" selection-start-line="12" selection-end-line="12" />
+        <state relative-caret-position="144">
+          <caret line="78" column="25" selection-start-line="78" selection-start-column="25" selection-end-line="78" selection-end-column="25" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/net/cloudburo/substrate/types/primitives/U64Test.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/net/cloudburo/substrate/types/common/Helper.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="289">
-          <caret line="41" column="35" selection-start-line="41" selection-start-column="25" selection-end-line="41" selection-end-column="35" />
+        <state relative-caret-position="272">
+          <caret line="126" column="22" lean-forward="true" selection-start-line="121" selection-start-column="8" selection-end-line="126" selection-end-column="22" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/net/cloudburo/substrate/types/primitives/U128Test.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="215">
+          <caret line="46" column="23" selection-start-line="46" selection-start-column="23" selection-end-line="46" selection-end-column="23" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>

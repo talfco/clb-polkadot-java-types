@@ -8,6 +8,7 @@ public class SubstrateTypeException extends Exception {
         SizeException,
         UIntSizeTooSmall,
         InvalidScaleType,
+        ConversionException,
         RemainingScaleBytesNotEmpty;
     }
 

@@ -60,7 +60,7 @@ public class UInt extends AbstractInt {
      * unsigned 16-bit integer 42: 0x2a00
      * unsigned 32-bit integer 16777215: 0xffffff00
      */
-    public ScaleBytes toU8Array() {
+    public ScaleBytes toU8Array() throws SubstrateTypeException {
         return new ScaleBytes(Helper.bigIntegerToByteArrayWithSize(this,this.getUIntBitLength(),true));
     }
 }

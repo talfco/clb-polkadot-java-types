@@ -8,7 +8,7 @@ import java.math.BigInteger;
 public class HelperTest {
 
     @Test
-    public void bigIntegerToByteArrayWithSize() {
+    public void bigIntegerToByteArrayWithSize() throws SubstrateTypeException {
         String str = Integer.toUnsignedString(1234567,16);
         BigInteger big = BigInteger.valueOf(1234567);
         //

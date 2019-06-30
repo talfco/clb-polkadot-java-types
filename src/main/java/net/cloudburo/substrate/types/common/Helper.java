@@ -2,6 +2,8 @@ package net.cloudburo.substrate.types.common;
 
 import net.cloudburo.substrate.types.TypeFactory;
 import net.cloudburo.substrate.types.codec.UIntBitLength;
+import org.apache.commons.codec.DecoderException;
+import org.apache.commons.codec.binary.Hex;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -63,7 +65,8 @@ public class Helper {
     //public static byte[] leIntToByteArray(int i) {
     //    return leIntToByteArrayWithSize(i,Integer.SIZE);
     //}
-    public static byte[] bigIntegerToByteArrayWithSize(BigInteger bigI, UIntBitLength bl, boolean littleEndian) {
+    public static byte[] bigIntegerToByteArrayWithSize(BigInteger bigI, UIntBitLength bl, boolean littleEndian)
+        throws SubstrateTypeException {
         int numBytes = bl.inBytes;
         ByteBuffer bb;
         // Allocate full size
@@ -77,28 +80,44 @@ public class Helper {
         if (littleEndian) {
             switch (bl.bitLength) {
                 case 8:
-                    bigIA =  bigI.toByteArray();
+                    bigIA = bigI.toByteArray();
                     break;
                 case 16:
                     bigIA = new byte[1];
-                    bigIA[0]= Short.valueOf(ByteSwapper.swap(bigI.shortValue())).byteValue();
+                    bigIA[0] = Short.valueOf(ByteSwapper.swap(bigI.shortValue())).byteValue();
                     break;
                 case 32:
                     int swapI = Integer.valueOf(ByteSwapper.swap(bigI.intValue()));
-                    return ByteBuffer.allocate(4).putInt(swapI).array();
+                    bigIA = ByteBuffer.allocate(4).putInt(swapI).array();
+                    break;
                 case 64:
                     long swapL = Long.valueOf(ByteSwapper.swap(bigI.longValue()));
-                    return ByteBuffer.allocate(8).putLong(swapL).array();
+                    bigIA =  ByteBuffer.allocate(8).putLong(swapL).array();
+                    break;
                 case 128:
-                    break;
+                    String revHex = reverseHex(bigI.toString(16));
+                    try {
+                        bigIA =  ByteBuffer.allocate(16).put(Hex.decodeHex(revHex)).array();
+                        break;
+                    } catch (DecoderException ex) {
+                        throw new SubstrateTypeException(SubstrateTypeException.Code.ConversionException,
+                                "DecoderException: " + ex.getMessage());
+                    }
                 case 256:
-                    break;
+                    revHex = reverseHex(bigI.toString(32));
+                    try {
+                        bigIA =  ByteBuffer.allocate(32).put(Hex.decodeHex(revHex)).array();
+                        break;
+                    } catch (DecoderException ex) {
+                        throw new SubstrateTypeException(SubstrateTypeException.Code.ConversionException,
+                                "DecoderException: " + ex.getMessage());
+                    }
             }
             bigIlen = bigIA.length;
         }
-         else
+        else
             bigIA = bigI.toByteArray();
-        ;
+
 
         if (numBytes > bigIlen) {
             for (int i=0;i<numBytes-bigIlen;i++) {
@@ -111,6 +130,19 @@ public class Helper {
         for (int j=0; j<numBytes;j++)
             res[j] = bb.get(j);
         return res;
+    }
+
+    public static String reverseHex(String originalHex) {
+        if (originalHex.length()%2==1)
+            originalHex = '0'+originalHex;
+        int lengthInBytes = originalHex.length() / 2;
+        char[] chars = new char[lengthInBytes * 2];
+        for (int index = 0; index < lengthInBytes; index++) {
+            int reversedIndex = lengthInBytes - 1 - index;
+            chars[reversedIndex * 2] = originalHex.charAt(index * 2);
+            chars[reversedIndex * 2 + 1] = originalHex.charAt(index * 2 + 1);
+        }
+        return new String(chars);
     }
 
 

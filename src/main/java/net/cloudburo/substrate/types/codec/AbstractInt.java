@@ -61,7 +61,7 @@ public abstract class AbstractInt extends BigInteger {
     /**
      * Encodes the value as a Uint8Array as per the SCALE specifications
      */
-    public abstract ScaleBytes toU8Array();
+    public abstract ScaleBytes toU8Array() throws SubstrateTypeException;
 
 
 }
