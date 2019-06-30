@@ -1,3 +1,20 @@
+/*
+ * Copyright (c) 2019. Cloudburo.net (Atnode GmbH)
+ *
+ * Licensed under the GNU General Public License v3.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ *      https://www.gnu.org/licenses/gpl-3.0.en.html
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ *
+ */
+
 package net.cloudburo.substrate.types.common;
 
 import net.cloudburo.substrate.types.TypeFactory;
@@ -12,7 +29,6 @@ import java.math.BigInteger;
 import java.net.URISyntaxException;
 import java.nio.ByteBuffer;
 import java.nio.ByteOrder;
-import java.nio.IntBuffer;
 import java.nio.file.Files;
 import java.nio.file.Paths;
 import java.util.HashMap;
@@ -83,8 +99,8 @@ public class Helper {
                     bigIA = bigI.toByteArray();
                     break;
                 case 16:
-                    bigIA = new byte[1];
-                    bigIA[0] = Short.valueOf(ByteSwapper.swap(bigI.shortValue())).byteValue();
+                    short swapS = Short.valueOf(ByteSwapper.swap(bigI.shortValue()));
+                    bigIA = ByteBuffer.allocate(2).putShort(swapS).array();
                     break;
                 case 32:
                     int swapI = Integer.valueOf(ByteSwapper.swap(bigI.intValue()));
@@ -118,18 +134,7 @@ public class Helper {
         else
             bigIA = bigI.toByteArray();
 
-
-        if (numBytes > bigIlen) {
-            for (int i=0;i<numBytes-bigIlen;i++) {
-                bb.put((byte)0);
-            }
-        }
-        bb.put(bigIA);
-
-        byte[] res = new byte[numBytes];
-        for (int j=0; j<numBytes;j++)
-            res[j] = bb.get(j);
-        return res;
+        return bigIA;
     }
 
     public static String reverseHex(String originalHex) {
