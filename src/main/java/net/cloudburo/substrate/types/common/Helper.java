@@ -87,7 +87,8 @@ public class Helper {
                     int swapI = Integer.valueOf(ByteSwapper.swap(bigI.intValue()));
                     return ByteBuffer.allocate(4).putInt(swapI).array();
                 case 64:
-                    break;
+                    long swapL = Long.valueOf(ByteSwapper.swap(bigI.longValue()));
+                    return ByteBuffer.allocate(8).putLong(swapL).array();
                 case 128:
                     break;
                 case 256:
