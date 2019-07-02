@@ -120,7 +120,7 @@ public class Helper {
                                 "DecoderException: " + ex.getMessage());
                     }
                 case 256:
-                    revHex = reverseHex(bigI.toString(32));
+                    revHex = reverseHex(bigI.toString(16));
                     try {
                         bigIA =  ByteBuffer.allocate(32).put(Hex.decodeHex(revHex)).array();
                         break;
