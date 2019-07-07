@@ -111,19 +111,41 @@ public class Helper {
                     bigIA =  ByteBuffer.allocate(8).putLong(swapL).array();
                     break;
                 case 128:
-                    String revHex = reverseHex(bigI.toString(16));
-                    try {
-                        bigIA =  ByteBuffer.allocate(16).put(Hex.decodeHex(revHex)).array();
+                    String hexValue = Hex.encodeHexString(bigI.toByteArray());
+                    String revHex = reverseHex(hexValue);
+                    try {                        // Positive Number initalize with 0
+                        // Positive Number initalize with 0
+                        if (bigI.signum() == 1) {
+                            bigIA = ByteBuffer.allocate(16).put(Hex.decodeHex(revHex)).array();
+                        } else {
+                            byte[] tmpl = new byte[]{
+                                    (byte)255,(byte)255,(byte)255,(byte)255,(byte)255,(byte)255,(byte)255,(byte)255,
+                                    (byte)255,(byte)255,(byte)255,(byte)255,(byte)255,(byte)255,(byte)255,(byte)255
+                            };
+                            bigIA = ByteBuffer.wrap(tmpl).put(Hex.decodeHex(revHex)).array();
+                        }
                         break;
                     } catch (DecoderException ex) {
                         throw new SubstrateTypeException(SubstrateTypeException.Code.ConversionException,
                                 "DecoderException: " + ex.getMessage());
                     }
                 case 256:
-                    revHex = reverseHex(bigI.toString(16));
+                    hexValue = Hex.encodeHexString(bigI.toByteArray());
+                    revHex = reverseHex(hexValue);
                     try {
-                        bigIA =  ByteBuffer.allocate(32).put(Hex.decodeHex(revHex)).array();
-                        break;
+                        // Positive Number initalize with 0
+                        if (bigI.signum() == 1) {
+                            bigIA = ByteBuffer.allocate(32).put(Hex.decodeHex(revHex)).array();
+                            break;
+                        } else {
+                            byte[] tmpl = new byte[]{
+                                    (byte)255,(byte)255,(byte)255,(byte)255,(byte)255,(byte)255,(byte)255,(byte)255,
+                                    (byte)255,(byte)255,(byte)255,(byte)255,(byte)255,(byte)255,(byte)255,(byte)255,
+                                    (byte)255,(byte)255,(byte)255,(byte)255,(byte)255,(byte)255,(byte)255,(byte)255,
+                                    (byte)255,(byte)255,(byte)255,(byte)255,(byte)255,(byte)255,(byte)255,(byte)255
+                            };
+                            bigIA = ByteBuffer.wrap(tmpl).put(Hex.decodeHex(revHex)).array();
+                        }
                     } catch (DecoderException ex) {
                         throw new SubstrateTypeException(SubstrateTypeException.Code.ConversionException,
                                 "DecoderException: " + ex.getMessage());

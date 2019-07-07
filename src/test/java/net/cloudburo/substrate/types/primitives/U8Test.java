@@ -17,7 +17,9 @@ public class U8Test {
             ui = new U8(256);
         } catch (SubstrateTypeException ex) {
             assert(ex.code == SubstrateTypeException.Code.UIntSizeTooSmall);
+            return;
         }
+        assert(false);
     }
 
 }
