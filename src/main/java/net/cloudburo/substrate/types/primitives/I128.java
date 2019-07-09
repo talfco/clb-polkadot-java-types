@@ -30,6 +30,9 @@ import java.math.BigInteger;
  */
 public class I128 extends Int {
 
+    public static String MAX ="170141183460469231731687303715884105727";
+    public static String MIN = "−170141183460469231731687303715884105728";
+
     public I128(BigInteger bn) throws SubstrateTypeException {
         super(bn,new UIntBitLength(UIntBitLength.UINT_BIT_LENGTH.L128));
     }
@@ -40,6 +43,10 @@ public class I128 extends Int {
 
     public I128(ScaleBytes data, String subType ) throws SubstrateTypeException {
         super(data,subType,new UIntBitLength(UIntBitLength.UINT_BIT_LENGTH.L128));
+    }
+
+    public  boolean isNegative(BigInteger bi) {
+        return (bi.compareTo(new BigInteger(MAX))==1) ?  true: false;
     }
 
 }

@@ -84,13 +84,6 @@ public class Helper {
     public static byte[] bigIntegerToByteArrayWithSize(BigInteger bigI, UIntBitLength bl, boolean littleEndian)
         throws SubstrateTypeException {
         int numBytes = bl.inBytes;
-        ByteBuffer bb;
-        // Allocate full size
-        int bigIlen = bigI.toByteArray().length;
-        if ( bigIlen> numBytes)
-           bb = ByteBuffer.allocate(bigIlen);
-        else
-            bb = ByteBuffer.allocate(numBytes);
         // Now do a little endian on the big inter received bytes
         byte[] bigIA = null;
         if (littleEndian) {
@@ -151,12 +144,17 @@ public class Helper {
                                 "DecoderException: " + ex.getMessage());
                     }
             }
-            bigIlen = bigIA.length;
         }
         else
             bigIA = bigI.toByteArray();
 
-        return bigIA;
+        ByteBuffer bb= ByteBuffer.wrap(bigIA,0,bigIA.length);
+        byte[] dest = new byte[numBytes];
+        if (bigIA.length<numBytes)
+            bb.get(dest,0,bigIA.length);
+        else
+            bb.get(dest,0,numBytes);
+        return dest;
     }
 
     public static String reverseHex(String originalHex) {

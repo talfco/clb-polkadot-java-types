@@ -44,7 +44,7 @@ public class U128Test {
         assert (ui1.intValue() == ui1.intValue());
         // doesn't fit
             try {
-            ui = new U128(new BigInteger("1701411834604692317316873037158841057278"));
+            ui = new U128(new BigInteger(U128.MAX).add(BigInteger.valueOf(1)));
         } catch (
         SubstrateTypeException ex) {
             assert (ex.code == SubstrateTypeException.Code.UIntSizeTooSmall);

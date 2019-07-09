@@ -39,7 +39,7 @@ public class U64Test {
         assert (ui1.intValue() == ui1.intValue());
         // doesn't fit
         try {
-            ui = new U64(new BigInteger("9223372036854775808"));
+            ui = new U64(new BigInteger(U64.MAX).add(BigInteger.valueOf(1)));
         } catch (
                 SubstrateTypeException ex) {
             assert (ex.code == SubstrateTypeException.Code.UIntSizeTooSmall);

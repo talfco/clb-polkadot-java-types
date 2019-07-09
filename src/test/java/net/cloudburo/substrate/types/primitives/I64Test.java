@@ -56,7 +56,7 @@ public class I64Test {
         assert(ui.toU8Array().getDataAsHex().equals("faffffffffffffff"));
         // doesn't fit
         try {
-            ui = new I64(new BigInteger("9223372036854775810"));
+            ui = new I64(new BigInteger(I64.MAX).add(BigInteger.valueOf(1)));
         } catch (
                 SubstrateTypeException ex) {
             assert (ex.code == SubstrateTypeException.Code.UIntSizeTooSmall);

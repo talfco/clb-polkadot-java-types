@@ -12,6 +12,9 @@ import java.math.BigInteger;
  */
 public class U64 extends UInt {
 
+    public static String MAX ="18446744073709551615";
+    public static String MIN = "0";
+
     public U64(BigInteger bn) throws SubstrateTypeException {
         super(bn,new UIntBitLength(UIntBitLength.UINT_BIT_LENGTH.L64));
     }

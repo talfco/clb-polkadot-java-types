@@ -12,6 +12,9 @@ import java.math.BigInteger;
  */
 public class U16 extends UInt {
 
+    public static int MAX=65535;
+    public static int MIN=0;
+
     public U16(BigInteger bn) throws SubstrateTypeException {
         super(bn,new UIntBitLength(UIntBitLength.UINT_BIT_LENGTH.L16));
     }

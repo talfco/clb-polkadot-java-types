@@ -28,11 +28,21 @@ public class I16Test {
         assert(ui.toU8Array().getDataAsHex().equals("0020"));
         I16 ui1 = new I16(ui.toU8Array());
         assert(ui1.intValue()==ui.intValue());
+        ui = new I16(I16.MAX);
+        assert(ui.toU8Array().getDataAsHex().equals("ff7f"));
         ui = new I16(-6);
         assert(ui.toU8Array().getDataAsHex().equals("faff"));
+        ui = new I16(I16.MIN);
+        assert(ui.toU8Array().getDataAsHex().equals("0080"));
         // doesn't fit in short
         try {
-            ui = new I16(32818);
+            ui = new I16(I16.MAX+1);
+        } catch (SubstrateTypeException ex) {
+            assert(ex.code == SubstrateTypeException.Code.UIntSizeTooSmall);
+            return;
+        }
+        try {
+            ui = new I16(I16.MIN-1);
         } catch (SubstrateTypeException ex) {
             assert(ex.code == SubstrateTypeException.Code.UIntSizeTooSmall);
             return;

@@ -32,7 +32,13 @@ public class I8Test {
         assert(ui.toU8Array().getDataAsHex().equals("fa"));
         // Doesn't fit
         try {
-            ui = new I8(128);
+            ui = new I8(I8.MAX+1);
+        } catch (SubstrateTypeException ex) {
+            assert(ex.code == SubstrateTypeException.Code.UIntSizeTooSmall);
+            return;
+        }
+        try {
+            ui = new I8(I8.MIN-1);
         } catch (SubstrateTypeException ex) {
             assert(ex.code == SubstrateTypeException.Code.UIntSizeTooSmall);
             return;

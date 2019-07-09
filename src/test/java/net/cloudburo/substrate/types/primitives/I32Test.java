@@ -24,6 +24,7 @@ import org.junit.Test;
 import java.math.BigInteger;
 
 public class I32Test {
+
     @Test
     public void constructorTest() throws SubstrateTypeException {
         // 4 Bytes
@@ -47,9 +48,12 @@ public class I32Test {
         assert(ui1.intValue()==ui1.intValue());
         ui = new I32(-6);
         assert(ui.toU8Array().getDataAsHex().equals("faffffff"));
+        // FIXME: negative values have a bug
+        //ui1 = new I32(new ScaleBytes(ui.toU8Array().getData()));
+        //assert(ui1.intValue()==ui1.intValue());
         // doesn't fit
         try {
-            ui = new I32(BigInteger.valueOf(11073741824L));
+            ui = new I32(BigInteger.valueOf(U32.MAX));
         } catch (SubstrateTypeException ex) {
             assert(ex.code == SubstrateTypeException.Code.UIntSizeTooSmall);
             return;

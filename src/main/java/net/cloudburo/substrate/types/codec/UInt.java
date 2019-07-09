@@ -14,13 +14,11 @@
  * limitations under the License.
  *
  */
-
 package net.cloudburo.substrate.types.codec;
 
 import net.cloudburo.substrate.types.common.Helper;
 import net.cloudburo.substrate.types.common.ScaleBytes;
 import net.cloudburo.substrate.types.common.SubstrateTypeException;
-import org.apache.commons.codec.binary.Hex;
 
 import java.math.BigInteger;
 
@@ -33,6 +31,10 @@ import java.math.BigInteger;
  */
 public class UInt extends AbstractInt {
 
+    public static BigInteger decode(ScaleBytes data) {
+        return Helper.toBigIntFromLittleEndian(data.getData());
+    }
+
     /* Use these constructors for Integers not encoded */
     public UInt(BigInteger bn) throws SubstrateTypeException {
         super(bn,new UIntBitLength(UIntBitLength.setFromInt(UIntBitLength.DEFAULT_UINT_BITS)));
@@ -44,22 +46,16 @@ public class UInt extends AbstractInt {
 
     /* Use these constructors for encoded Integers */
     public UInt(ScaleBytes data)throws SubstrateTypeException {
-        super(data, new UIntBitLength(UIntBitLength.setFromInt(UIntBitLength.DEFAULT_UINT_BITS)));
+        this(data, new UIntBitLength(UIntBitLength.setFromInt(UIntBitLength.DEFAULT_UINT_BITS)));
     }
 
     public UInt(ScaleBytes data, UIntBitLength len) throws SubstrateTypeException {
-        super(data,len);
+        super(UInt.decode(data),len) ;
     }
 
     public UInt(ScaleBytes data, String subType,UIntBitLength len) throws SubstrateTypeException {
-        super(data,len,subType);
-    }
-
-    /**
-     * Returns the Hex Representation of the Value
-     */
-    public String toHex() {
-        return Hex.encodeHexString(this.toByteArray());
+        this(data,len);
+        this.subType = subType;
     }
 
     /**
@@ -70,14 +66,5 @@ public class UInt extends AbstractInt {
         return "u" + this.getUIntBitLength().bitLength;
     }
 
-    /**
-     * Returns the SCALE Code encoded fixed-width Integer.
-     * Basic integers are encoded using a fixed-width little-endian (LE) format. E.g.
-     *
-     * unsigned 16-bit integer 42: 0x2a00
-     * unsigned 32-bit integer 16777215: 0xffffff00
-     */
-    public ScaleBytes toU8Array() throws SubstrateTypeException {
-        return new ScaleBytes(Helper.bigIntegerToByteArrayWithSize(this,this.getUIntBitLength(),true));
-    }
+
 }

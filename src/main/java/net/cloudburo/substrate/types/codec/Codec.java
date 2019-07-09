@@ -17,20 +17,23 @@
 
 package net.cloudburo.substrate.types.codec;
 
-import net.cloudburo.substrate.types.common.Helper;
-import net.cloudburo.substrate.types.common.InvalidScaleTypeValueException;
 import net.cloudburo.substrate.types.common.ScaleBytes;
-import net.cloudburo.substrate.types.common.ScaleType;
+import net.cloudburo.substrate.types.common.SubstrateTypeException;
 
-public class Option extends ScaleType {
+public interface Codec {
 
-    public Option(ScaleBytes data ) {
-        super(data, null);
-    }
+    /**
+     * returns a hex string representation of the value
+     */
+    public abstract String toHex();
 
-    // TODO Implement
-    public  Object  process() throws InvalidScaleTypeValueException {
-        Integer option_byte =  Integer.valueOf(Helper.byteArrayToLeInt(this.getNextBytes(1)));
-        return null;
-    }
+    /**
+     * Returns the common runtime type name for this instance
+     */
+    public abstract String toRawType();
+
+    /**
+     * Encodes the value as a Uint8Array as per the SCALE specifications
+     */
+    public abstract ScaleBytes toU8Array() throws SubstrateTypeException;
 }

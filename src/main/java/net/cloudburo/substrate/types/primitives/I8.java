@@ -29,6 +29,9 @@ import java.math.BigInteger;
  */
 public class I8 extends Int {
 
+    public static int MAX=127;
+    public static int MIN=-128;
+
     public I8(BigInteger bn) throws SubstrateTypeException {
         super(bn,new UIntBitLength(UIntBitLength.UINT_BIT_LENGTH.L8));
     }
@@ -43,6 +46,10 @@ public class I8 extends Int {
 
     public I8(ScaleBytes data, String subType ) throws SubstrateTypeException {
         super(data,subType,new UIntBitLength(UIntBitLength.UINT_BIT_LENGTH.L8));
+    }
+
+    public  boolean isNegative(BigInteger bi) {
+        return (bi.intValue()> MAX) ?  true: false;
     }
 
 

@@ -30,7 +30,7 @@ public class U32Test {
         assert(ui1.intValue()==ui1.intValue());
         // doesn't fit
         try {
-            ui = new U32(BigInteger.valueOf(2147483648L));
+            ui = new U32(BigInteger.valueOf(U32.MAX+1));
         } catch (SubstrateTypeException ex) {
             assert(ex.code == SubstrateTypeException.Code.UIntSizeTooSmall);
             return;

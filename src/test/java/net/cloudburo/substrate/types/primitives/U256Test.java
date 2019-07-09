@@ -59,7 +59,7 @@ public class U256Test {
         assert (ui1.intValue() == ui1.intValue());
         // doesn't fit
         try {
-            ui = new U256(new BigInteger("999999999999999999999999999999999999999999999999999999999999999999999999999999999999999"));
+            ui = new U256(new BigInteger(U256.MAX).add(BigInteger.valueOf(1)));
         } catch (
                 SubstrateTypeException ex) {
             assert (ex.code == SubstrateTypeException.Code.UIntSizeTooSmall);

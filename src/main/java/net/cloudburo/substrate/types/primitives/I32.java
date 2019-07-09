@@ -29,6 +29,9 @@ import java.math.BigInteger;
  */
 public class I32 extends Int {
 
+    public static int MAX =2147483647;
+    public static int MIN = -2147483648;
+
     public I32(BigInteger bn) throws SubstrateTypeException {
         super(bn,new UIntBitLength(UIntBitLength.UINT_BIT_LENGTH.L32));
     }
@@ -44,4 +47,9 @@ public class I32 extends Int {
     public I32(ScaleBytes data, String subType ) throws SubstrateTypeException {
         super(data,subType,new UIntBitLength(UIntBitLength.UINT_BIT_LENGTH.L32));
     }
+
+    public  boolean isNegative(BigInteger bi) {
+        return (bi.intValue()> MAX) ?  true: false;
+    }
+
 }

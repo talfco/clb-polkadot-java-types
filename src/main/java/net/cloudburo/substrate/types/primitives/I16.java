@@ -29,6 +29,9 @@ import java.math.BigInteger;
  */
 public class I16 extends Int {
 
+    public static int MAX= 32767;
+    public static int MIN=-32768;
+
     public I16(BigInteger bn) throws SubstrateTypeException {
         super(bn,new UIntBitLength(UIntBitLength.UINT_BIT_LENGTH.L16));
     }
@@ -43,6 +46,10 @@ public class I16 extends Int {
 
     public I16(ScaleBytes data, String subType ) throws SubstrateTypeException {
         super(data,subType,new UIntBitLength(UIntBitLength.UINT_BIT_LENGTH.L16));
+    }
+
+    public  boolean isNegative(BigInteger bi) {
+        return (bi.intValue()> MAX) ?  true: false;
     }
 
 

@@ -12,6 +12,9 @@ import java.math.BigInteger;
  */
 public class U32 extends UInt {
 
+    public static long MAX= 4294967295L;
+    public static int MIN=0;
+
     public U32(BigInteger bn) throws SubstrateTypeException {
         super(bn,new UIntBitLength(UIntBitLength.UINT_BIT_LENGTH.L32));
     }

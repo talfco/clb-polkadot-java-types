@@ -40,3 +40,6 @@ https://stackoverflow.com/questions/4266756/can-we-make-unsigned-byte-in-java/42
 # References
 * https://github.com/paritytech/parity-scale-codec
 * https://substrate.dev/docs/en/overview/low-level-data-format
+* The most powerful online hex converter: https://www.scadacore.com/tools/programming-calculators/online-hex-converter/
+
+

@@ -29,6 +29,9 @@ import java.math.BigInteger;
  */
 public class I256 extends Int {
 
+    public static String MAX="57896044618658097711785492504343953926634992332820282019728792003956564819967";
+    public static String MIN="-57896044618658097711785492504343953926634992332820282019728792003956564819967";
+
     public I256(BigInteger bn) throws SubstrateTypeException {
         super(bn,new UIntBitLength(UIntBitLength.UINT_BIT_LENGTH.L256));
     }
@@ -39,5 +42,9 @@ public class I256 extends Int {
 
     public I256(ScaleBytes data, String subType ) throws SubstrateTypeException {
         super(data,subType,new UIntBitLength(UIntBitLength.UINT_BIT_LENGTH.L256));
+    }
+
+    public  boolean isNegative(BigInteger bi) {
+        return (bi.compareTo(new BigInteger(MAX))==1) ?  true: false;
     }
 }

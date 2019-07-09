@@ -61,7 +61,7 @@ public class I128Test {
         assert(ui.toU8Array().getDataAsHex().equals("faffffffffffffffffffffffffffffff"));
         // doesn't fit
             try {
-            ui = new I128(new BigInteger("1701411834604692317316873037158841057278"));
+            ui = new I128(new BigInteger(I128.MAX).add(BigInteger.valueOf(1)));
         } catch (
         SubstrateTypeException ex) {
             assert (ex.code == SubstrateTypeException.Code.UIntSizeTooSmall);

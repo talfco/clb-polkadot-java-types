@@ -60,7 +60,14 @@ public class I256Test {
         assert (ui1.intValue() == ui1.intValue());
         // doesn't fit
         try {
-            ui = new I256(new BigInteger("999999999999999999999999999999999999999999999999999999999999999999999999999999999999999"));
+            ui = new I256(new BigInteger(I256.MAX).add(BigInteger.valueOf(1)));
+        } catch (
+                SubstrateTypeException ex) {
+            assert (ex.code == SubstrateTypeException.Code.UIntSizeTooSmall);
+            return;
+        }
+        try {
+            ui = new I256(new BigInteger(I256.MIN).subtract(BigInteger.valueOf(1)));
         } catch (
                 SubstrateTypeException ex) {
             assert (ex.code == SubstrateTypeException.Code.UIntSizeTooSmall);

@@ -20,9 +20,10 @@ package net.cloudburo.substrate.types.codec;
 import net.cloudburo.substrate.types.common.Helper;
 import net.cloudburo.substrate.types.common.ScaleBytes;
 import net.cloudburo.substrate.types.common.SubstrateTypeException;
-import org.apache.commons.codec.binary.Hex;
 
 import java.math.BigInteger;
+import java.nio.ByteBuffer;
+import java.nio.ByteOrder;
 
 /**
  * Basic integers are encoded using a fixed-width little-endian (LE) format.
@@ -31,7 +32,28 @@ import java.math.BigInteger;
  * the bitLength is provided and any additional use keeps the number to this
  * length.
  */
-public class Int extends AbstractInt {
+public  class Int extends AbstractInt {
+
+    public static BigInteger decode(ScaleBytes data,UIntBitLength len) throws SubstrateTypeException {
+        BigInteger bi =  Helper.toBigIntFromLittleEndian(data.getData());
+        if (len.inBytes>64)
+            // FIXME implement
+            throw new SubstrateTypeException(SubstrateTypeException.Code.ConversionException);
+        if (isSet(data.getData(),len.bitLength-1)) {
+            if (len.inBytes<64)
+                BigInteger.valueOf(ByteBuffer.wrap(data.getData()).order(ByteOrder.LITTLE_ENDIAN).getInt());
+            else
+                BigInteger.valueOf(ByteBuffer.wrap(data.getData()).order(ByteOrder.LITTLE_ENDIAN).getLong());
+        }
+        return bi;
+    }
+
+    public static boolean isSet(byte[] arr, int bit) {
+        int index = bit / 8;  // Get the index of the array for the byte with this bit
+        int bitPosition = bit % 8;  // Position of this bit in a byte
+        return (arr[index] >> bitPosition & 1) == 1;
+    }
+
 
     /* Use these constructors for Integers not encoded */
     public Int(BigInteger bn) throws SubstrateTypeException {
@@ -44,23 +66,20 @@ public class Int extends AbstractInt {
 
     /* Use these constructors for encoded Integers */
     public Int(ScaleBytes data)throws SubstrateTypeException {
-        super(data, new UIntBitLength(UIntBitLength.setFromInt(UIntBitLength.DEFAULT_UINT_BITS)));
+        this(data, new UIntBitLength(UIntBitLength.setFromInt(UIntBitLength.DEFAULT_UINT_BITS)));
     }
 
     public Int(ScaleBytes data, UIntBitLength len) throws SubstrateTypeException {
-        super(data,len);
-    }
+        super(Int.decode(data,len),len) ;
+}
 
     public Int(ScaleBytes data, String subType, UIntBitLength len) throws SubstrateTypeException {
-        super(data,len,subType);
+        this(data,len);
+        this.subType = subType;
     }
 
-    /**
-     * Returns the Hex Representation of the Value
-     */
-    public String toHex() {
-        return Hex.encodeHexString(this.toByteArray());
-    }
+   //public  abstract boolean isNegative(BigInteger bi);
+
 
     /**
      *
@@ -70,14 +89,5 @@ public class Int extends AbstractInt {
         return "i" + this.getUIntBitLength().bitLength;
     }
 
-    /**
-     * Returns the SCALE Code encoded fixed-width Integer.
-     * Basic integers are encoded using a fixed-width little-endian (LE) format. E.g.
-     *
-     * unsigned 16-bit integer 42: 0x2a00
-     * unsigned 32-bit integer 16777215: 0xffffff00
-     */
-    public ScaleBytes toU8Array() throws SubstrateTypeException {
-        return new ScaleBytes(Helper.bigIntegerToByteArrayWithSize(this,this.getUIntBitLength(),true));
-    }
+
 }

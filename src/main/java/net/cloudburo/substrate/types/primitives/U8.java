@@ -12,6 +12,9 @@ import java.math.BigInteger;
  */
 public class U8 extends UInt {
 
+    public static int MAX=255;
+    public static int MIN=0;
+
     public U8(BigInteger bn) throws SubstrateTypeException {
         super(bn,new UIntBitLength(UIntBitLength.UINT_BIT_LENGTH.L8));
     }

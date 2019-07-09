@@ -13,6 +13,10 @@ import java.math.BigInteger;
  */
 public class U128 extends UInt {
 
+    public static String MAX ="340282366920938463463374607431768211455";
+    public static String MIN = "0";
+
+
     public U128(BigInteger bn) throws SubstrateTypeException {
         super(bn,new UIntBitLength(UIntBitLength.UINT_BIT_LENGTH.L128));
     }

@@ -34,7 +34,6 @@ public class Compact extends ScaleType {
 
     public Compact(ScaleBytes data, String subType) {
         super(data,subType);
-        // TODO metaData
     }
 
     public int getCompactLength() {
@@ -80,7 +79,7 @@ public class Compact extends ScaleType {
         } else
             return this.compactBytes;
 
-        // TODO
+        // TODO Finalize
         return null;
     }
 

@@ -24,9 +24,13 @@ public class UIntTest {
         // unsigned 16-bit integer 42: 0x2a00
         ui = new UInt(BigInteger.valueOf(42),new UIntBitLength(UIntBitLength.UINT_BIT_LENGTH.L16));
         assert(ui.toU8Array().getDataAsHex().equals("2a00"));
+        assert(ui.toRawType().equals("u16"));
         // unsigned 32-bit integer 16777215: 0x00ffffff
         ui = new UInt(BigInteger.valueOf(16777215),new UIntBitLength(UIntBitLength.UINT_BIT_LENGTH.L32));
         assert(ui.toU8Array().getDataAsHex().equals("ffffff00"));
+        assert(ui.toRawType().equals("u32"));
+        ui = new UInt(ui.toU8Array());
+        assert(BigInteger.valueOf(16777215).equals(ui));
     }
 
 }

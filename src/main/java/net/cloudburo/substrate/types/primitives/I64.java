@@ -29,6 +29,9 @@ import java.math.BigInteger;
  */
 public class I64 extends Int {
 
+    public static String MAX ="9223372036854775807";
+    public static String MIN = "−9223372036854775808";
+
     public I64(BigInteger bn) throws SubstrateTypeException {
         super(bn,new UIntBitLength(UIntBitLength.UINT_BIT_LENGTH.L64));
     }
@@ -43,5 +46,9 @@ public class I64 extends Int {
 
     public I64(ScaleBytes data, String subType ) throws SubstrateTypeException {
         super(data,subType,new UIntBitLength(UIntBitLength.UINT_BIT_LENGTH.L64));
+    }
+
+    public  boolean isNegative(BigInteger bi) {
+        return (bi.compareTo(new BigInteger(MAX))==1) ?  true: false;
     }
 }
